@@ -62,7 +62,7 @@ C'est ce qu'il est recommandé de faire lorsque vous souhaitez recommencer l'éx
 
 Le calcul utilisant plusieurs coeurs est possible en Python et en R. Un certains nombres de traitements natifs ou accessibles via des paquets sont d'ailleurs naturellement parallélisés dans ces langages. Voici un exemple de calcul multi-coeurs utilisant des processus en Python. Il ne s'agit pas de la seule façon de faire. Le principe de fonctionnement est souvent identique :
 
-<img src="images/parallel.png" alt="Git" style="Height:700px;"/>
+<img src="/assets/images/parallel.png" alt="Git" style="Height:700px;"/>
 
 Il s'agit de distribuer la charge de travail sur plusieurs coeurs/machines afin d'assurer une vitesse de calcul optimale plutôt que de faire faire les opérations par un seul coeur. En effet, on fait donc plusieurs calculs en même temps plutôt que les uns après les autres.
 
