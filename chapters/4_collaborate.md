@@ -13,7 +13,7 @@ Votre session est strictement personnelle. Même les autres personnes associées
 ## Gérer ses versions de code avec git
 
 Git est le système de version de code (VCS) le plus connu. Il permet d’enregistrer les modifications apportées au code d’une application, rétablir une version en cas de problème. Ce logiciel possède beaucoup d’intérêt pour le travail collaboratif. A l’aide d’un système de synchronisation, il permet d’enregistrer son code sur un dépôt local et distant.
-Dans le cadre de travail individuel sur une session CASD, il présente un fort intérêt pour enregistrer les différentes versions de son code que l'on travail seul ou même à plusieurs. Cependant, il est impossible d’utiliser les fonctions distantes du logiciel dans les bulles CASD puisque internet n’est pas disponible. Git sera incapable de contacter un serveur distant et donc, aucune synchronisation vers un dépôt GitHub ou GitLab extérieur ne sera possible. Cependant, il est tout de même possible d'effectuer du travail collaboratif avec git au CASD. Pour cela il faut utiliser un bare repository.
+Dans le cadre de travail individuel sur une session CASD, il présente un fort intérêt pour enregistrer les différentes versions de son code que l'on travaille seul ou même à plusieurs. Cependant, il est impossible d’utiliser les fonctions distantes du logiciel dans les bulles CASD puisque internet n’est pas disponible. Git sera incapable de contacter un serveur distant et donc, aucune synchronisation vers un dépôt GitHub ou GitLab extérieur ne sera possible. Cependant, il est tout de même possible d'effectuer du travail collaboratif avec git au CASD. Pour cela il faut utiliser un bare repository.
 
 <img src="/assets/images/Git.png" alt="Git" style="Height:450px;"/>
 

@@ -56,7 +56,7 @@ De même, on privilégie presque systématiquement le découpage d’une tâche 
 
 ### Les fichiers à créer lors d’un nouveau projet python
 
-D’abord, on commence par créer un fichier requirements.txt. Ce fichier permet de noter l’ensemble des librairies dont notre projet a besoin. Il nous sera très utile par la suite car il permettra à un autre collaborateur de notre bulle projet de créer un environnement à l'identique du notre (voir [Travail collaboratif](#Travail-collaboratif)). On le remplira dans le chapitre [gérer les paquets](#Gérer-les-paquets-associés-à-votre-projet), il restera vide pour l’instant.
+D’abord, on commence par créer un fichier requirements.txt. Ce fichier permet de noter l’ensemble des librairies dont notre projet a besoin. Il nous sera très utile par la suite car il permettra à un autre collaborateur de notre bulle projet de créer un environnement à l'identique du notre (voir [Travail collaboratif](4_collaborate.md)). On le remplira dans le chapitre [gérer les paquets](2_packages.md), il restera vide pour l’instant.
 
 Ensuite, créons un fichier main.py. Ce fichier sera le seul point d’entrée dans notre programme. Il doit rester très court et son rôle est uniquement d’appeler les différents modules et fonctions de notre programme. Le vrai code métier n’y figure jamais.
 
