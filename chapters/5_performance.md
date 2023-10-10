@@ -9,6 +9,7 @@
 ## Gestion des ressources
 
 > _Qu'est ce que les ressources ?_
+
 > Il s'agit de la configuration matérielle associée à votre projet. C'est-à-dire, le niveau de puissance du matériel fourni. Il doit être adapté aux traitements que vous allez effectuer. Par exemple, une régression linéaire sur 30 000 individus peut tout à fait être réalisé avec une configuration minimale. Mais ce n'est pas le cas de l'entrainement d'un modèle d'intelligence artificielle sur des centaines de milliers de lignes. Par ressources, au CASD, on entend le processeur et ses coeurs, la mémoire vive (RAM) ainsi que la mémoire sur disque (HDD/SSD).
 
 Le processeur possède deux caractéristiques qui nous intéressent particulièrement pour le calcul :
@@ -23,9 +24,11 @@ Le deuxième élément clé qui détermine la performance d'un calcul (hormis le
 En effet, en chargeant des données lues à de multiples reprises dans la mémoire RAM, on économise ainsi le temps de lecture sur disque. Cela peut représenter un gain de temps très important selon les applications. Cette utilisation n'est pas la même selon les logiciels. Par exemple, R utilise massivement la mémoire, ce qui peut causer des erreurs puisque celui-ci n'inclue pas de mécanisme de nettoyage nativement. A la différence de Python, qui vide automatiquement la mémoire, R impose de faire attention aux chargements que l'on effectue et de vider manuellement la mémoire. Nous verrons également ceci dans la section optimisation.
 
 > _Comment savoir quelles ressources sont consommées ?_
+
 > Windows fournit un outil dédié nommé le gestionnaire des tâches. Celui-ci est disponible dans les bulles CASD en tapant 'Gestionnaire des tâches' dans la barre de recherche Windows. L'utilisation de celui-ci est fortement recommandée puisqu'il permet de suivre la consommation en mémoire et en processeur en temps réel via l'onglet 'performance'.
 
 > _Comment obtenir une configuration de niveau supérieure si j'ai identifié ce besoin ?_
+
 > Le CASD peut vous proposer une augmentation temporaire ou permanente de vos ressources afin d'effectuer vos calculs. Pour cela, il est recommandé de prendre contact à l'adresse service@casd.eu. Vous pourrez alors exprimer votre besoin et un expert pourra évaluer avec vous la configuration la plus adaptée selon votre besoin et vos moyens.
 
 **Attention:** Les ressources sur lesquelles travaillent les différents utilisateurs de votre projet sont communes ! Cela signifie que la mémoire est partagée, ainsi que le processeur. A l'aide du gestionnaire des tâches de Windows, il est possible d'évaluer les ressources consommées par chaque utilisateur en temps réel dans l'onglet 'utilisateurs'. Il permet également de savoir quels utilisateurs sont connectés.
