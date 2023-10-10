@@ -27,7 +27,7 @@ Vscode est l'environnement de développement le plus populaire au monde. Il perm
 2. **Syntaxe** : La coloration syntaxique avancée et l'indentation automatique sont activés par défaut.
 3. **Enregistrement et formattage automatique** : Vous pouvez demander à VSCode d'enregistrer le code pour vous en ouvrant les paramètres dans fichiers > préférences > paramètres. Recherchez le paramètre Auto-save. De plus, VSCode peut formatter le fichier à chaque enregistrement de celui-ci à l'aide du paramètre Format On Save.
 4. **Git intégré** : VSCode est livré avec une intégration Git native, cette interface peut être plus simple d'utilisation que le terminal. Pour l'utiliser, le bouton ce situe dans la colonne de gauche et se nomme Contrôle de code source.
-5. **IntelliSense** : Il s'agit du système d'auto-complétion pour Python. Il peut réellement accélerer le développement.
+5. **IntelliSense** : Il s'agit du système d'auto-complétion pour Python.
 6. **Débuggeur intégré** : A l'aide des points d'arrêt dans le code, vous pouvez suivre l'éxecution à l'aide du mode debug. Vous pourrez visualiser l'évolution des variables. Le mode débug de VSCode se situe juste en dessous de l'intégration git dans la colonne de gauche.
 7. **Terminal intégré** : VSCode propose un terminal intégré qui vous permet d'exécuter des commandes Python et d'autres tâches sans quitter l'éditeur. Pour cela, utilisez le menu terminal.
 8. **Linter intégré** : Les linters tels que Pylint peuvent être intégrés pour identifier et corriger les erreurs de style de code et les problèmes potentiels.
@@ -109,4 +109,4 @@ server <-  function(input, output)  {
 shinyApp(ui, server)
 ```
 
-[Chapitre IV : Le travail collaboratif dans la bulle CASD](4_packages.md)
+[Chapitre IV : Le travail collaboratif dans la bulle CASD](4_collaborate.md)
