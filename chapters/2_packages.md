@@ -6,8 +6,8 @@
 
 # Gérer les paquets associés à votre projet
 
-> _Paquet / librairie / dépendance / module ?_
-> Si ces mots ne sont pas exactement équivalents, en python ou en R, ils signifient presque toujours avoir recours à une ou plusieurs fonctionnalités additionelles du language par l'import dans le code. Cela permet parfois de ne pas recoder soi même ce qui existe déjà. Certaines librairies sont directement amenées avec python (sys ou os) ou R (stats), d'autres doivent être installées manuellement (pandas, tensorflow pour Python, deeplyr pour R).
+> _Paquet / librairie / dépendance / module?_
+> Si ces mots ne sont pas exactement équivalents, en python ou en R, ils signifient presque toujours avoir recours à une ou plusieurs fonctionnalités additionnelles du langage par l'import dans le code. Cela permet parfois de ne pas recoder soi-même ce qui existe déjà. Certaines librairies sont directement amenées avec python (sys ou os) ou R (stats), d'autres doivent être installées manuellement (pandas, tensorflow pour Python, deeplyr pour R).
 
 Le CASD propose des environnements de travail sans internet pour des raisons de sécurité. Par conséquent, impossible de consulter une documentation Python ou R. Votre ordinateur personnel ou votre téléphone peut tout à fait vous aider dans ce cas. Il vous suffit de retranscrire la commande ou ligne de code obtenue en réponse à votre question.
 Cependant, pour les paquets, ce n’est pas possible d’effectuer une telle manœuvre. Les serveurs auxquels vous avez l’habitude de vous connecter pour récupérer les paquets (PYPI ou le CRAN par exemple) ne sont pas joignables sans internet.
@@ -39,7 +39,7 @@ Il est très fortement recommandé d’utiliser un fichier requirements.txt, et 
 pip install –r requirements.txt
 ```
 
-**Attention :** Notez l'utilisation de l'argument -r qui précise que l'on doit installer les paquets depuis un fichier. Oublier le -r impliquera que pip essaiera d'installer un paquet nommé littéralement requirements.txt, et échouera donc.
+**Attention:** Notez l'utilisation de l'argument -r qui précise que l'on doit installer les paquets depuis un fichier. Oublier le -r impliquera que pip essaiera d'installer un paquet nommé littéralement requirements.txt, et échouera donc.
 
 Avec ce fichier, vous pourrez ainsi exécuter votre code sur une autre machine en créant un environnement python vierge, l’activant, et en exécutant la commande ci-dessus dans le terminal.
 
@@ -61,26 +61,26 @@ library("package_name")
 
 Si vous souhaitez utiliser sparkR afin d'accélérer votre application, voici la marche à suivre.
 
-Procedez d'abord à l'installation du package sparklyr à l'aide du dépot, comme dans la section précédente, puis chargez le :
+Procédez d'abord à l'installation du package sparklyr à l'aide du dépôt, comme dans la section précédente, puis chargez le:
 
 ```r
 install.packages("sparklyr")
 library("sparklyr")
 ```
 
-Dans un contexte avec internet, la commande correcte serait :
+Dans un contexte avec internet, la commande correcte serait:
 
 ```r
 spark_install(version = "3.3.2", hadoop_version = "2")
 ```
 
-Cependant, cette tentative se soldera par un échec puisque cette commande tente de récupérer le binaire correspondant sur les serveurs Apache. Cependant, les archives nécéssaires à cette installation sont disponibles dans votre espace de travail dans le dossier S:\spark. Executons donc la commande suivante :
+Cependant, cette tentative se soldera par un échec puisque cette commande tente de récupérer le binaire correspondant sur les serveurs Apache. Cependant, les archives nécessaires à cette installation sont disponibles dans votre espace de travail dans le dossier S:\spark. Exécutons donc la commande suivante:
 
 ```r
 spark_install_tar("/chemin/vers/votre/binaire.tar")
 ```
 
-Enfin, puisque nous travaillons sous environnement Windows, une installation complémentaire est nécéssaire. Essayez d'abord d'éxecuter la commande :
+Enfin, puisque nous travaillons sous environnement Windows, une installation complémentaire est nécessaire. Essayez d'abord d'exécuter la commande:
 
 ```r
 sc <- spark_connect(master="local")
@@ -88,12 +88,12 @@ sc <- spark_connect(master="local")
 
 Cette commande doit échouer en indiquant une erreur de type : "Copy winutils.exe to C:\Users\projet_0_p_nom0000\AppData\Local\spark\spark-3.3.2-bin-hadoop2\tmp\hadoop\bin"
 
-Le chemin indiqué par l'erreur est l'adresse à laquelle nous devons copier les fichiers contenus dans S:\Spark\Binaires. Une fois les fichiers copiés, éxecutez de nouveau :
+Le chemin indiqué par l'erreur est l'adresse à laquelle nous devons copier les fichiers contenus dans S:\Spark\Binaires. Une fois les fichiers copiés, exécutez de nouveau:
 
 ```r
 sc <- spark_connect(master="local")
 ```
 
-Vous possédez un serveur spark adressable avec R pour votre application !
+Vous possédez un serveur Spark adressable avec R pour votre application!
 
-[Chapitre III : Coder une application basique](3_code.md)
+[Chapitre III: Coder une application basique](3_code.md)

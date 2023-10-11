@@ -16,6 +16,6 @@ En cas de problème, question sur ce guide, idées pour l’améliorer, n’hés
 4. [Effectuer du travail collaboratif](chapters/4_collaborate.md) (Espace commun / Git / Répertoire git partagé)
 5. [Optimiser les performances](chapters/5_performance.md) (Ressources / Libération mémoire / Parallélisation du code)
 
-## Bon code !
+## Bon code!
 
 L'équipe Datascience du CASD.

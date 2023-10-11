@@ -17,7 +17,7 @@ Dans le cadre de travail individuel sur une session CASD, il présente un fort i
 
 <img src="/assets/images/Git.png" alt="Git" style="Height:450px;"/>
 
-Un bare repository est un répertoire git partagé qui sert de stockage distant. On l'installe généralement dans l'espace commun de telle sorte que tout le monde puisse le cloner et travailler dessus dans son espace local. Une fois satisfait des modifications, on peut alors effectuer la commande git push afin d'envoyer sur le répertoire partagé l'ensemble des modifications qui ont été enregistrer dans git. Les autres collaborateurs peuvent alors en disposer avec un git pull. Sur le schéma, vous avez sur la gauche le fonctionnement traditionnel d'une architecture git avec un dépot distant hébergé sur Gitlab/Github. Sur la droite, le fonctionnement en mode multi-utilisateurs est expliqué dans une bulle projet. Pour mettre en place un tel système, la procédure et ses commandes sont expliquées dans la section suivante
+Un bare repository est un répertoire git partagé qui sert de stockage distant. On l'installe généralement dans l'espace commun de telle sorte que tout le monde puisse le cloner et travailler dessus dans son espace local. Une fois satisfait des modifications, on peut alors effectuer la commande git push afin d'envoyer sur le répertoire partagé l'ensemble des modifications qui ont été enregistrer dans git. Les autres collaborateurs peuvent alors en disposer avec un git pull. Sur le schéma, vous avez sur la gauche le fonctionnement traditionnel d'une architecture git avec un dépôt distant hébergé sur Gitlab/Github. Sur la droite, le fonctionnement en mode multi-utilisateurs est expliqué dans une bulle projet. Pour mettre en place un tel système, la procédure et ses commandes sont expliquées dans la section suivante
 
 **Conseil:** Réalisez des ajouts à la base de code (commande `git add .` et `git commit -m "nom du commit"`) aussi fréquemment que possible, avec des noms parlants. En cas d'apparition d'erreur, cela permettra de rechercher quelle est la modification qui a introduit l'erreur, au lieu de perdre l'ensemble des modifications apportées lors d'une nouvelle version. Une bonne pratique est: une modification pour ajouter une fonction ou corriger une erreur = un commit dans git.
 
@@ -25,22 +25,22 @@ Une fiche récapitulative avec les principales fonctions du logiciel est disponi
 
 ## Mettre en place un bare repository Git
 
-D’abord le premier utilisateur va créer un répertoire bare dans l'espace commun. Pour effectuer cette manoeuvre, rendez-vous avec votre explorateur de fichier dans C:\Utilisateurs\Public\Documents. Créez alors un dossier pour le projet. Toujours dans l'explorateur, rentrez dans le dossier et faites : clic droit, Git Bash here. Un terminal de commande devrait alors s'ouvrir, vous pouvez y saisir la commande suivante :
+D’abord le premier utilisateur va créer un répertoire bare dans l'espace commun. Pour effectuer cette manœuvre, rendez-vous avec votre explorateur de fichier dans C:\Utilisateurs\Public\Documents. Créez alors un dossier pour le projet. Toujours dans l'explorateur, rentrez dans le dossier et faites: clic droit, Git Bash here. Un terminal de commande devrait alors s'ouvrir, vous pouvez y saisir la commande suivante:
 
 ```bash
 git init --bare
 ```
 
-Le terminal devrait répondre : `Initialized empty git repository in C:/Users/Public/Documents/nom_de_votre_dossier/`. Cette adresse est maintenant celle du répertoire bare et vous pouvez fermer ce terminal. Le dépot est créé pour l'ensemble des utilisateurs du projet. Personne ne peux l'éditer directement : pour y apporter des modifications, il faut le cloner et utiliser les commandes git add . / git commit / git push. Pour cloner le dépot, rendez vous à la section suivante.
+Le terminal devrait répondre: `Initialized empty git repository in C:/Users/Public/Documents/nom_de_votre_dossier/`. Cette adresse est maintenant celle du répertoire bare et vous pouvez fermer ce terminal. Le dépôt est créé pour l'ensemble des utilisateurs du projet. Personne ne peut l'éditer directement: pour y apporter des modifications, il faut le cloner et utiliser les commandes git add . / git commit / git push. Pour cloner le dépôt, rendez-vous à la section suivante.
 
-## Cloner un dépot déjà existant
+## Cloner un dépôt déjà existant
 
-Rendez-vous maintenant avec votre explorateur de fichiers dans votre espace personnel, à l'endroit où vous souhaitez cloner ce dépot. Effectuez : clic droit, Git Bash Here. Dans le terminal, saissisez :
+Rendez-vous maintenant avec votre explorateur de fichiers dans votre espace personnel, à l'endroit où vous souhaitez cloner ce dépôt. Effectuez: clic droit, Git Bash Here. Dans le terminal, saissisez:
 
 ```bash
-git clone C:/Users/Public/Documents/nom_du_dossier_dans_l'espace_commun/
+git clone C:/Users/Public/Documents/nom_du_dossier_à_cloner/
 ```
 
-Vous pouvez maintenant éditer votre dépot, et envoyer vos modifications comme vous le feriez hors de la bulle !
+Vous pouvez maintenant éditer votre dépôt, et envoyer vos modifications comme vous le feriez hors de la bulle!
 
-[Chapitre V : Optimiser les performances de vos calculs](5_performance.md)
+[Chapitre V: Optimiser les performances de vos calculs](5_performance.md)
