@@ -1,9 +1,3 @@
-1. **Organiser votre projet**
-2. [Gérer les paquets associés au projet](2_packages.md)
-3. [Coder votre application avec R ou Python](3_code.md)
-4. [Effectuer du travail collaboratif](4_collaborate.md)
-5. [Optimiser les performances](5_performance.md)
-
 # Organiser et gérer son projet
 
 ## Python: Manager son environnement de travail avec conda

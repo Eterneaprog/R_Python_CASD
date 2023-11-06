@@ -1,9 +1,3 @@
-1. [Organiser votre projet](1_organise.md)
-2. [Gérer les paquets associés au projet](2_packages.md)
-3. **Coder votre application avec R ou Python**
-4. [Effectuer du travail collaboratif](4_collaborate.md)
-5. [Optimiser les performances](5_performance.md)
-
 # Développer votre application!
 
 ## Un éditeur de code

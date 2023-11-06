@@ -1,9 +1,3 @@
-1. [Organiser votre projet](1_organise.md)
-2. **Gérer les paquets associés au projet**
-3. [Coder votre application avec R ou Python](3_code.md)
-4. [Effectuer du travail collaboratif](4_collaborate.md)
-5. [Optimiser les performances](5_performance.md)
-
 # Gérer les paquets associés à votre projet
 
 > _Paquet / librairie / dépendance / module?_
@@ -21,7 +15,7 @@ Si vous souhaitez installer un paquet non présent dans nos dépôts, vous êtes
 
 ## Installer un paquet python
 
-En python, le gestionnaire de paquets à utiliser au CASD est pip car c’est un serveur PYPI qui est synchronisé. Le script install-package présent sur votre bureau doit être utilisé afin d'assurer que l'accès au serveur contenant les paquets est initialisé. L’environnement conda de votre choix doit être activé, et enfin, il faut utiliser la commande suivante dans le fenêtre conda ouverte par le script:
+En python, le gestionnaire de paquets à utiliser au CASD est pip car c’est un serveur PYPI qui est synchronisé. Le script install-package présent sur votre bureau doit être utilisé afin d'assurer que l'accès au serveur contenant les paquets est initialisé. L’environnement conda de votre choix doit être créé et activé (voir chapitre 1), et enfin, il faut utiliser la commande suivante dans le fenêtre conda ouverte par le script:
 
 ```bash
 pip install package_name
@@ -56,44 +50,5 @@ Puis dans votre code:
 ```r
 library("package_name")
 ```
-
-## Installer le package sparklyr pour travailler avec SparkR
-
-Si vous souhaitez utiliser sparkR afin d'accélérer votre application, voici la marche à suivre.
-
-Procédez d'abord à l'installation du package sparklyr à l'aide du dépôt, comme dans la section précédente, puis chargez le:
-
-```r
-install.packages("sparklyr")
-library("sparklyr")
-```
-
-Dans un contexte avec internet, la commande correcte serait:
-
-```r
-spark_install(version = "3.3.2", hadoop_version = "2")
-```
-
-Cependant, cette tentative se soldera par un échec puisque cette commande tente de récupérer le binaire correspondant sur les serveurs Apache. Cependant, les archives nécessaires à cette installation sont disponibles dans votre espace de travail dans le dossier S:\spark. Exécutons donc la commande suivante:
-
-```r
-spark_install_tar("/chemin/vers/votre/binaire.tar")
-```
-
-Enfin, puisque nous travaillons sous environnement Windows, une installation complémentaire est nécessaire. Essayez d'abord d'exécuter la commande:
-
-```r
-sc <- spark_connect(master="local")
-```
-
-Cette commande doit échouer en indiquant une erreur de type : "Copy winutils.exe to C:\Users\projet_0_p_nom0000\AppData\Local\spark\spark-3.3.2-bin-hadoop2\tmp\hadoop\bin"
-
-Le chemin indiqué par l'erreur est l'adresse à laquelle nous devons copier les fichiers contenus dans S:\Spark\Binaires. Une fois les fichiers copiés, exécutez de nouveau:
-
-```r
-sc <- spark_connect(master="local")
-```
-
-Vous possédez un serveur Spark adressable avec R pour votre application!
 
 [Chapitre III: Coder une application basique](3_code.md)
