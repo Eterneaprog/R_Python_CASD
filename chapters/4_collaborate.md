@@ -2,7 +2,22 @@
 
 ## Se partager des fichiers
 
-Votre session est strictement personnelle. Même les autres personnes associées à votre projet ne peuvent accéder à votre espace de travail. Le CASD vous met donc à disposition un espace commun dans lequel les fichiers sont partagés entre les différents collaborateurs de votre projet. Cet espace commun peut être accédé via le dossier raccourcis sur votre bureau, en cliquant sur le raccourci espace commun. S'il s'agit de code, rendez-vous dans la section [Git](#Gérer-ses-versions-de-code-avec-git).
+Votre session est strictement personnelle. Même les autres personnes associées à votre projet ne peuvent accéder à votre espace de travail. Le CASD vous met donc à disposition un espace commun dans lequel les fichiers sont partagés entre les différents collaborateurs de votre projet. Cet espace commun peut être accédé via le dossier raccourcis sur votre bureau.
+
+Dans le dossier des raccourcis, vous trouverez trois dossiers:
+
+- Espace Commun : Il s'agit du dossier partagé avec les autres collaborateurs de votre projet.
+- Espace Libre Accès : L'ensemble des documents publics (documentation des données et nomenclatures)
+- Espace Projet : Les imports et les sources de données de votre projet.
+
+Vous pourrez donc échanger des fichiers via l'espace commun.
+
+## Clavarder et éditer un document commun avec Etherpad
+
+Afin de pouvoir échanger directement dans la bulle, un chat écrit est disponible. Pour cela, voici la démarche à suivre:
+
+- Un collaborateur doit lancer le script clavardage dans le dossier raccourcis du bureau. Il se connecte ensuite sur 127.0.0.1:9001/ et crée un bloc note avec un nom.
+- Chaque collaborateur se connecte sur 127.0.0.1:9001/p/nom_du_pad, tout le monde peut alors collaborer au document et clavarder via la colonne de droite. Cela permet d'échanger des informations de façon rapide en restant dans la bulle.
 
 ## Gérer ses versions de code avec git
 
@@ -35,6 +50,4 @@ Rendez-vous maintenant avec votre explorateur de fichiers dans votre espace pers
 git clone C:/Users/Public/Documents/nom_du_dossier_à_cloner/
 ```
 
-Vous pouvez maintenant éditer votre dépôt, et envoyer vos modifications comme vous le feriez hors de la bulle!
-
-[Chapitre V: Optimiser les performances de vos calculs](5_performance.md)
+Vous pouvez maintenant éditer votre dépôt, et envoyer vos modifications comme vous le feriez hors de la bulle !

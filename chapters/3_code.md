@@ -102,5 +102,3 @@ server <-  function(input, output)  {
 # Execution
 shinyApp(ui, server)
 ```
-
-[Chapitre IV: Le travail collaboratif dans la bulle CASD](4_collaborate.md)

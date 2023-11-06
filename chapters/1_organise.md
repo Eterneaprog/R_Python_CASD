@@ -15,12 +15,11 @@ D’abord nous allons créer un environnement nommé projet_1 pour votre projet,
 Ouvrez le dossier raccourcis présents sur le bureau de votre SD-Box une fois connecté à votre session. Vous y trouverez un raccourci vers Minconda Prompt. Il s'agit tout simplement d'un terminal de commande où Anaconda est accessible:
 
 ```bash
-conda create --name projet_1 python=3.9 --offline
+conda create --name projet_1 python --offline
 ```
 
-Cette commande utilise anaconda (conda) afin de créer un environnement (create), le nommer projet_1 (option name) et spécifier sa version (option python). Enfin, nous sommes dans un environnement sans internet d'où le paramètre --offline.
+Cette commande utilise anaconda (conda) afin de créer un environnement (create), le nommer projet_1 (option name) et demander l'installation de python (option python). Enfin, nous sommes dans un environnement sans internet d'où le paramètre --offline.
 
-**Conseil :** Choisissez une version de python compatible avec les packages que vous souhaitez utiliser (voir section: gérer les paquets). Dans le doute, choisir une version de python déjà ancrée et stable est plus raisonnable que de choisir la version la plus récente, cela maximise vos chances de compatibilité avec des paquets existants (une ou deux versions antérieures à la plus récente par exemple).
 
 **Attention :** Python2 ainsi que les versions antérieures à la version 3.8 ne sont pas disponibles sur le CASD. Il est déconseillé d'utiliser ces versions même en dehors car peu de librairies modernes acceptent encore de travailler dans ces versions de Python.
 
@@ -74,5 +73,3 @@ Il existe bien sûr d’autres façons d’organiser son code, mais le principe 
 ### Les fichiers à créer lors d’un nouveau projet R
 
 Un projet R peut tout à fait bénéficier d’une architecture aussi solide que celle d’une application python. Par exemple, le package [shinygouv](https://github.com/spyrales/shinygouv) permet de réaliser des applications au style bien connu de l’état, avec le langage R. Ce package utilise (entre autre) une licence, des tests, un dossier contenant les codes sources, un fichier Readme, et un fichier app.R. Il a donc une architecture très proche de celle que nous avons vu pour les projets Python.
-
-[Chapitre II: Gestion des paquets associés au projet](2_packages.md)

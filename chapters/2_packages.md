@@ -15,19 +15,31 @@ Si vous souhaitez installer un paquet non présent dans nos dépôts, vous êtes
 
 ## Installer un paquet python
 
-En python, le gestionnaire de paquets à utiliser au CASD est pip car c’est un serveur PYPI qui est synchronisé. Le script install-package présent sur votre bureau doit être utilisé afin d'assurer que l'accès au serveur contenant les paquets est initialisé. L’environnement conda de votre choix doit être créé et activé (voir chapitre 1), et enfin, il faut utiliser la commande suivante dans le fenêtre conda ouverte par le script:
+En python, le gestionnaire de paquets à utiliser au CASD est pip car c’est un serveur PYPI qui est synchronisé. Le CASD vous met a disposition un script qui permet d'assurer le lancement du serveur contenant les paquets :
+
+- **Lancez le script pip-install-package depuis votre dossier raccourcis situé sur votre bureau**. Ne fermez pas la fenêtre obtenue tant que vos packages ne sont pas installés.
+
+L’environnement conda de votre choix doit être créé et activé (voir chapitre 1). Il vous faudra ouvrir un Miniconda prompt depuis l'espace raccourci et utiliser la commande : 
+
+- Dans l'anaconda prompt ouvert, saisissez:
 
 ```bash
-pip install package_name
+conda activate nom_de_votre_environnement
 ```
 
-Puis dans votre code python, utilisez cette instruction pour importer votre paquet, comme vous le feriez en dehors de l'espace de travail sécurisé:
+puis :
+
+```bash
+pip install nom_du_package_souhaité
+```
+
+Dans votre code python, utilisez cette instruction pour importer votre paquet, comme vous le feriez en dehors de l'espace de travail sécurisé:
 
 ```python
 import package_name
 ```
 
-Il est très fortement recommandé d’utiliser un fichier requirements.txt, et y consigner les paquets les uns sous les autres. La commande d’installation qui permet d’obtenir l’ensemble des paquets depuis le dépôt est alors:
+Il est très fortement recommandé d’utiliser un fichier requirements.txt, et y consigner les paquets que vous utilisez les uns sous les autres. La commande d’installation qui permet d’obtenir l’ensemble des paquets depuis le dépôt est alors:
 
 ```bash
 pip install –r requirements.txt
@@ -35,7 +47,7 @@ pip install –r requirements.txt
 
 **Attention:** Notez l'utilisation de l'argument -r qui précise que l'on doit installer les paquets depuis un fichier. Oublier le -r impliquera que pip essaiera d'installer un paquet nommé littéralement requirements.txt, et échouera donc.
 
-Avec ce fichier, vous pourrez ainsi exécuter votre code sur une autre machine en créant un environnement python vierge, l’activant, et en exécutant la commande ci-dessus dans le terminal.
+Avec ce fichier, vous pourrez ainsi exécuter votre code sur une autre machine en créant un environnement python vierge, l’activant, et en exécutant la commande ci-dessus dans le terminal. Votre environnement sera reproductible, pas vous, ainsi que d'autre collaborateurs de votre projet (voir chapitre 4 : Travail collaboratif).
 
 ## Installer un paquet R
 
@@ -50,5 +62,3 @@ Puis dans votre code:
 ```r
 library("package_name")
 ```
-
-[Chapitre III: Coder une application basique](3_code.md)
