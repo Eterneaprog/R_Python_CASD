@@ -37,6 +37,13 @@ Un exemple de code permettant de renvoyer la tranche d'age associée à un utili
 
 ```python
 def convert(age):
+    """
+    This function takes the age of a person and returns the age category it belongs to
+    :param age: The age of the person
+    :type age: int
+    :return: la categorie d'age de la personne
+    :rtype: str
+    """
     if age < 18 :
         categorie = '[0-18]'
     elif age < 30 :
@@ -74,6 +81,10 @@ Dans cet exemple, j'ai mis les imports en en-têtes de fichiers, puis, j'ai déf
 
 **Conseil :** Tant que possible, il faut essayer d'appliquer les principes recommandés par le standard [PEP8](https://peps.python.org/pep-0008/) (Python Enhancement Proposals) qui définit le style de code applicable au code Python. Cela permet un code plus lisible et de meilleur qualité.
 
+> _Docstring / Commentaires ?_
+> Lorsque vous produisez le code, il est important de le documenter. Cependant, il n'existe pas une seule manière de faire cette documentation. Le docstring est la norme python pour documenter ce que fait une fonction (c'est le Quoi). Cela sert avant tout aux utilisateurs de votre code ainsi qu'aux développeurs. On retrouve cette documentation sous la fonction.
+> Cependant, il est aussi important de documenter le Comment. C'est ce qui permet à un autre développeur de modifier votre code et d'assurer sa maintenabilité. Cela peut être fait à l'aide des commentaires dans le code. Cela ne remplace pas le fait d'avoir un code lisible (nom de variables parlants, conditions claires), mais cela permet de savoir ce que le code est en train d'effectuer. Il faut trouver le compromis entre trop de commentaires, et un code sans commentaire qui est illisible.
+
 ### Un exemple d'application R simple
 
 Voici un autre exemple en R utilisant la librairie shiny. Elle permet de faire une interface graphique simple. Ici, je n'ai pas séparé le code en plusieurs fichiers. Cependant, on pourrait tout à fait définir une interface graphique plus complète dans un autre module, et l'importer dans ce fichier app.R.
@@ -102,3 +113,5 @@ server <-  function(input, output)  {
 # Execution
 shinyApp(ui, server)
 ```
+
+

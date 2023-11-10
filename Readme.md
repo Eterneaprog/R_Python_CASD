@@ -6,7 +6,7 @@ Vous êtes habilité ou en cours d’habilitation pour travailler sur des donné
 
 Ce guide est organisé par fiches thématiques. Ces fiches sont positionnées dans un ordre chronologique: elles permettent de partir d’un environnement de travail CASD vierge, jusqu’au développement de votre application, son optimisation et l'utilisation éventuelle de Spark. Cependant, il est tout à fait possible de se déplacer jusqu’à la fiche de votre choix si vous rencontrez un problème spécifique. Les mots clés de chaque chapitre vous permettent de vous diriger plus simplement.
 
-En cas de problèmes, questions sur ce guide, idées pour l’améliorer, n’hésitez pas à nous contacter à [datascience@casd.eu](mailto:datascience@casd.eu). Nous serons ravis d’échanger avec vous et de vous aider à résoudre vos problèmes.
+En cas de problèmes, questions sur ce guide, idées pour l’améliorer, n’hésitez pas à nous contacter à [titouan.rigaud@casd.eu](mailto:titouan.rigaud@casd.eu). Nous serons ravis d’échanger avec vous et de vous aider à résoudre vos problèmes.
 
 # Table des matières
 
