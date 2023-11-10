@@ -1,6 +1,6 @@
 # Organiser et gérer son projet
 
-## Python: Manager son environnement de travail avec conda
+## Python: Gérer son environnement de travail avec conda
 
 > _Qu'est-ce qu'un environnement python?_
 
