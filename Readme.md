@@ -16,7 +16,7 @@ En cas de problèmes, questions sur ce guide, idées pour l’améliorer, n’h�
 4. [Effectuer du travail collaboratif](chapters/4_collaborate.md) (Espace commun / Git / Répertoire git partagé / Chat dans la bulle)
 5. [Optimiser les performances](chapters/5_performance.md) (Ressources / Libération mémoire / Parallélisation du code)
 6. [Installer Spark et le paramétrer](chapters/6_spark.md) (SparklyR / PySpark / SparkSession / mode local et le mode cluster)
-7. [Utiliser Spark pour accélérer ses calculs](chapters/7_spark_usage.md) ( Adapter son code vers Spark / Jointure / Moyenne)
+7. [Utiliser Spark pour accélérer ses calculs](chapters/7_spark_usage.md) (Adapter son code vers Spark / SQL/ Jointure)
 
 ## Bon code!
 

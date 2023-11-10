@@ -13,19 +13,21 @@ Voici un aperçu simplifié du fonctionnement d'un cluster Spark :
 <img src="/assets/images/spark.png" alt="Git"/>
 
 Un cluster spark est un outil puissant qui permet d'accélérer grandement la vitesse d'éxecution de vos calculs. De plus, la puissance du cluster et sa taille sont plus modulables qu'une machine seule à laquelle on ajoute des ressources : il suffit d'ajouter des workers. Cependant, l'utilisation de cet outil n'est pas toujours aussi aisé que lorsque l'on s'adresse une machine seule avec R. 
-Voyons d'abord comment installer les paquets nécessaires pour pouvoir s'adresser au cluster en R, puis en python. Ensuite, nous verrons comment réserver des ressources (il s'agit du la notion de Spark Context sur le schéma, aussi appelée SparkSession aujourd'hui). Les personnes possédant un accès à un cluster apprendrons également à modifier cette instruction, afin de passer du mode local au mode cluster. Enfin, nous verrons comment utiliser notre cluster pour effectuer des calculs simples. Les personnes disposant d'un cluster pourront également
+Voyons d'abord comment installer les paquets nécessaires pour pouvoir s'adresser à Spark en R, puis en python. Ensuite, nous verrons comment réserver des ressources (il s'agit du la notion de Spark Context sur le schéma, aussi appelée SparkSession aujourd'hui). Cela nous permettra de simuler un cluster en executant nos codes localement avec Spark. Les personnes possédant un accès à un cluster apprendrons ensuite à modifier l'instruction SparkSession, afin de passer du mode local au mode cluster. Enfin, nous verrons comment utiliser notre cluster pour effectuer des calculs simples.
 
 ## Effectuer les installations nécéssaires
 
 ### Installer Spark
 
-Afin de simplifier l'installation de Spark, nous avons conçu un script qui effectue cette installation de façon automatisée. Il est situé dans l'espace commun. 
+Afin de simplifier l'installation de Spark, nous avons conçu un script qui effectue cette installation de façon automatisée. Il est situé dans l'espace commun. Que vous souhaitiez adresser le logiciel Spark avec une syntaxe proche de R ou de Python, cette étape est nécessaire.
 
-Cliquez sur AutoInstallSpark.bat afin d'effectuer l'installation. 
+Cliquez sur AutoInstallSpark.bat afin d'effectuer l'installation.
+
+**Attention :** Vous devez attendre la fin du script et qu'il demande d'appuyer sur entrée afin de terminer. Il ne faut pas fermer la fenêtre du terminal ouvert pendant le script, cette opération n'est pas très longue.
 
 Ce script décompresse l'archive contenant Spark, copie les fichiers nécessaires à son utilisation sous Windows, et paramètres les variables d'environnement.
 
-Vous pouvez tester la bonne installation avec la commande suivante dans un terminal de commande (cmd) :
+Vous pouvez tester l'installation avec la commande suivante dans un terminal de commande (cmd):
 ```bash
 spark-shell
 ```
