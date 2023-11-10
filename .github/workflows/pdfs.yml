@@ -22,7 +22,7 @@ jobs:
           input_dir: chapters
           output_dir: pdfs
           images_dir: assets/images
-          image_import: ./images
+          image_import: /assets/images
           # Default is true, can set to false to only get PDF files
           build_html: false
       - uses: actions/upload-artifact@v3
