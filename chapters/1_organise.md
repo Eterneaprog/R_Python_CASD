@@ -23,6 +23,8 @@ Cette commande utilise anaconda (conda) afin de créer un environnement (create)
 
 **Attention :** Python2 ainsi que les versions antérieures à la version 3.8 ne sont pas disponibles sur le CASD. Il est déconseillé d'utiliser ces versions même en dehors car peu de librairies modernes acceptent encore de travailler dans ces versions de Python.
 
+Pour choisir une version de python spécifique, il suffit d'exécuter la commande présentée ci-dessus dans le terminal ouvert par miniconda dont le nom correspond. Par exemple, pour obtenir un environnement python 3.10, il suffit d'ouvrir le miniconda prompt 3.10 et d'exécuter le conda create.
+
 ### Activation de l’environnement
 
 > _A quoi sert l'activation?_
@@ -64,7 +66,7 @@ Enfin, on peut créer des sous dossiers et fichiers selon nos besoins:
 
 Ces éléments ne sont en général pas nécessaires pour faire fonctionner le code, mais ils rendent le développement vraiment plus simple, d’où le fait que peu de projets s’en passent aujourd’hui. Voici un exemple d’architecture:
 
-<img src="./images/arbre.png" alt="Arborescence" style="width:700px;"/>
+<img src="./images/arbre.png" alt="Arborescence" style="width:100%;height:auto;"/>
 
 Ici le dossier ressources est séparé entre un dossier data et un dossier img.
 

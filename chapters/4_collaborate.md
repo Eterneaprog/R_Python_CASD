@@ -32,7 +32,7 @@ Un bare repository est un répertoire git partagé qui sert de stockage distant.
 
 Une fiche récapitulative avec les principales fonctions du logiciel est disponible [ici](https://education.github.com/git-cheat-sheet-education.pdf)
 
-## Mettre en place un bare repository Git
+### Mettre en place un bare repository Git
 
 D’abord le premier utilisateur va créer un répertoire bare dans l'espace commun. Pour effectuer cette manœuvre, rendez-vous avec votre explorateur de fichier dans C:\Utilisateurs\Public\Documents. Créez alors un dossier pour le projet. Toujours dans l'explorateur, rentrez dans le dossier et faites: clic droit, Git Bash here. Un terminal de commande devrait alors s'ouvrir, vous pouvez y saisir la commande suivante:
 
@@ -42,7 +42,7 @@ git init --bare
 
 Le terminal devrait répondre: `Initialized empty git repository in C:/Users/Public/Documents/nom_de_votre_dossier/`. Cette adresse est maintenant celle du répertoire bare et vous pouvez fermer ce terminal. Le dépôt est créé pour l'ensemble des utilisateurs du projet. Personne ne peut l'éditer directement: pour y apporter des modifications, il faut le cloner et utiliser les commandes git add . / git commit / git push. Pour cloner le dépôt, rendez-vous à la section suivante.
 
-## Cloner un dépôt déjà existant
+### Cloner un dépôt déjà existant
 
 Rendez-vous maintenant avec votre explorateur de fichiers dans votre espace personnel, à l'endroit où vous souhaitez cloner ce dépôt. Effectuez: clic droit, Git Bash Here. Dans le terminal, saissisez:
 
@@ -51,3 +51,7 @@ git clone C:/Users/Public/Documents/nom_du_dossier_à_cloner/
 ```
 
 Vous pouvez maintenant éditer votre dépôt, et envoyer vos modifications comme vous le feriez hors de la bulle !
+
+## Utiliser un serveur gitlab
+
+...

@@ -12,7 +12,7 @@ En cas de problèmes, questions sur ce guide, idées pour l’améliorer, n’h�
 
 1. [Organiser votre projet](chapters/1_organise.md) (Environnement conda / Arborescence de fichiers)
 2. [Gérer les paquets associés au projet](chapters/2_packages.md) (Librairies / Paquets / Dépendances / Pip)
-3. [Coder votre application avec R ou Python](chapters/3_code.md) (Editeurs de code / Exemples d'applications R et Python)
+3. [Coder votre application avec R ou Python](chapters/3_code.md) (Editeurs de code : Rstudio et VsCode / Exemples d'applications R et Python)
 4. [Effectuer du travail collaboratif](chapters/4_collaborate.md) (Espace commun / Git / Répertoire git partagé / Chat dans la bulle)
 5. [Optimiser les performances](chapters/5_performance.md) (Ressources / Libération mémoire / Parallélisation du code)
 6. [Installer Spark et le paramétrer](chapters/6_spark.md) (SparklyR / PySpark / SparkSession / mode local et le mode cluster)

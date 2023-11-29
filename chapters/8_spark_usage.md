@@ -7,7 +7,7 @@ Dans le chapitre précédent, nous avons appris comment installer un client pour
 
 Ces deux exemples seront traités en SparklyR et PySpark.
 
-Je ne présenterai pas dans ce guide les utilisations avancées de Spark (Gestion des graph avec GraphX, machine Learning avec MLlib ou encore le mode streaming). Ces utilisations sont très spécifiques, mais font également l'objet de documentation en ligne. Elles peuvent être utiles si vous vous souhaitez faire un graph sur de grands volumes de données.
+Je ne présenterai pas dans ce guide les utilisations avancées de Spark (Gestion des graph avec GraphX, machine Learning avec MLlib ou encore le mode streaming). Ces utilisations sont très spécifiques, mais font également l'objet de documentation en ligne. Nous faisons mention de leur existence car ces librairies sont très puissantes. Elles permettent des applications sur des volumes de données qui ne sont pas comparables avec les autres librairies disponibles sur le marché.
 
 ## Exécuter une requête SQL
 

@@ -20,6 +20,9 @@ En effet, en chargeant des données lues à de multiples reprises dans la mémoi
 > _Comment savoir quelles ressources sont consommées?_
 
 > Windows fournit un outil dédié nommé le gestionnaire des tâches. Celui-ci est disponible dans les bulles CASD en tapant 'Gestionnaire des tâches' dans la barre de recherche Windows. L'utilisation de celui-ci est fortement recommandée puisqu'il permet de suivre la consommation en mémoire et en processeur en temps réel via l'onglet 'performance'.
+>
+
+<img src="./images/taskManager.png" alt="Task Manager" style="width:100%;height:auto;"/>
 
 > _Comment obtenir une configuration de niveau supérieure si j'ai identifié ce besoin?_
 
@@ -59,7 +62,7 @@ C'est ce qu'il est recommandé de faire lorsque vous souhaitez recommencer l'ex�
 
 Le calcul utilisant plusieurs cœurs est possible en Python et en R. Un certains nombres de traitements natifs ou accessibles via des paquets sont d'ailleurs naturellement parallélisés dans ces langages. Voici un exemple de calcul multi-coeurs utilisant des processus en Python. Il ne s'agit pas de la seule façon de faire. Le principe de fonctionnement est souvent identique:
 
-<img src="./images/parallel.png" alt="Git" style="width:100%;height:auto;"/>
+<img src="./images/parallel.png" alt="Architecture parallèle" style="width:100%;height:auto;"/>
 
 Il s'agit de distribuer la charge de travail sur plusieurs cœurs/machines afin d'assurer une vitesse de calcul optimale plutôt que de faire faire les opérations par un seul cœur. En effet, on fait donc plusieurs calculs en même temps plutôt que les uns après les autres.
 
@@ -106,4 +109,4 @@ if __name__ == "__main__":
 
 Dans ce code, on exécute un traitement sur les données de façon parallèle avec 4 processus. On commence par définir le traitement que chaque processus va effectuer. Puis, la partie du code qui suite l'instruction `if __name__ == "__main__"` correspond au processus central sur le schéma précédent. Il commence par invoquer les autres processus. Puis, il leur assigne une tâche à effectuer et enregistre les résultats. Une fois ces traitements effectués, les processus sont terminés et on obtient le résultat final que l'on peut retraiter dans le processus central (ou non si ce n'est pas nécessaire).
 
-**Attention:** Les ressources mémoires associées à chaque processus sont partagées dans cet exemple! Cela veut dire que l'utilisation massive de processus peut provoquer une saturation de la mémoire RAM. Chaque processus peut être amené à utiliser des ressources mémoires dans son traitement, et donc augmenter fortement la consommation par rapport à un traitement mono-processeur.
+**Attention:** Les ressources mémoires associées à chaque processus sont partagées dans cet exemple ! Cela veut dire que l'utilisation massive de processus peut provoquer une saturation de la mémoire RAM. Chaque processus peut être amené à utiliser des ressources mémoires dans son traitement, et donc augmenter fortement la consommation par rapport à un traitement mono-processeur.

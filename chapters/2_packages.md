@@ -7,7 +7,7 @@ Le CASD propose des environnements de travail sans internet pour des raisons de 
 Cependant, pour les paquets, ce n’est pas possible d’effectuer une telle manœuvre. Les serveurs auxquels vous avez l’habitude de vous connecter pour récupérer les paquets (PYPI ou le CRAN par exemple) ne sont pas joignables sans internet.
 À gauche, dans le fonctionnement dans votre système personnel, votre ordinateur utilise sa connexion internet pour atteindre les serveurs PYPI ou CRAN et récupérer les paquets voulus.
 
-<img src="./images/serveurs.png" alt="serveurs" style="width:500px;"/>
+<img src="./images/serveurs.png" alt="serveurs" style="width:60%;height:auto;"/>
 
 Afin de vous permettre d’installer vous-même les packages, sans envoi de mail, le CASD vous met à disposition des serveurs internes pour Python et R (à droite sur le schéma). Ces serveurs ne contiennent pas l’ensemble des paquets disponibles sur les serveurs publics afin d’assurer la sécurité des environnements de travail. Ils sont synchronisés par nos équipes de façon manuelles. Ils contiennent les paquets les plus communs avec lesquels les utilisateurs travaillent. La liste est disponible ici.
 
