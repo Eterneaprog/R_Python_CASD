@@ -1,6 +1,6 @@
 # R et Python dans les bulles du CASD
 
-<center><img src="/images/CASD.png" alt="logo_casd" style="width:200px;"/></center>
+<center><img src="./images/CASD.png" alt="logo_casd" style="width:200px;"/></center>
 
 Vous êtes habilité ou en cours d’habilitation pour travailler sur des données confidentielles auxquelles vous accéderez depuis le Centre d’Accès Sécurisé aux Données (CASD). Vous souhaitez travailler sur ces données avec le logiciel R, Python ou même Spark. Ce guide présente des conseils pour la réalisation de vos projets faisant intervenir ces langages ainsi que sur l’utilisation des outils de gestion de projets dans un contexte sans internet.
 
