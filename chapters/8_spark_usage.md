@@ -1,6 +1,6 @@
 # Utiliser Spark pour faire des calculs
 
-Dans le chapitre précédent, nous avons appris comment installer un client pour utiliser Spark, en mode Local ou en mode Cluster. Nous avons également appris comment demander des ressources, et fermer notre session. Voyons maintenant comment utiliser ces outils afin d'effectuer des calculs. Il existe de nombreuses ressources, en particulier la [documentation officielle de Spark](https://spark.apache.org/docs/latest/quick-start.html). Nous allons ici voir des exemples fondamentaux :
+Dans les précédents chapitres, nous avons appris comment installer un client pour utiliser Spark, en mode Local ou en mode Cluster. Nous avons également appris comment demander des ressources, et fermer notre session. Voyons maintenant comment utiliser ces outils afin d'effectuer des calculs. Il existe de nombreuses ressources, en particulier la [documentation officielle de Spark](https://spark.apache.org/docs/latest/quick-start.html). Nous allons ici voir des exemples fondamentaux :
 
 - Comment exécuter une requête SQL
 - Comment joindre deux tables avec Spark
@@ -112,3 +112,5 @@ result = df1.join(df2, "id", "inner")
 result.show()
 spark.stop()
 ```
+
+Dans les deux exemples, on charge d'abord les données, puis ont effectue la jointure entre les deux dataframes créés. Enfin, on affiche les résultats avant de fermer la session. Même s'il s'agit du mode local, la fermeture de la session est une bonne pratique qu'il faut appliquer systématiquement à la fin d'un code Spark pour libérer les ressources.

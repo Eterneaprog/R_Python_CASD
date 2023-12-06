@@ -8,11 +8,11 @@ L'éditeur de code est un outil de développement qui facilite la rédaction de 
 
 > _Quelle différence entre R et Rstudio ?_
 
-> R est un langage de programmation, mais également un logiciel libre capable d'éxecuter du code R. Il ne faut pas le confondre avec RStudio. Il s'agit d'un éditeur de code dédié au langage R. Il propre de visualiser ce que la session R possède en mémoire, de colorer votre code R ou encore de créer et un gérer vos projets R. Il est tout à fait possible de faire du R sans Rstudio.
+> R est un langage de programmation, mais également un logiciel libre capable d'éxecuter du code R. Il ne faut pas le confondre avec RStudio. Il s'agit d'un éditeur de code dédié au langage R. Il propose de visualiser ce que la session R possède en mémoire, de colorer votre code R ou encore de créer et gérer vos projets R. Il est tout à fait possible de faire du R sans Rstudio.
 
 Rstudio est l'environnement de développement pour R le plus populaire. Il possède l'avantage d'être optimisé pour ce langage, il ne nécessite que très peu de configuration avant d'être fonctionnel.
 
-<img src="./images/RStudio.png" alt="RStudio" style="width:100%;height:auto;"/>
+<img src="./images/Rstudio.png" alt="RStudio" style="width:100%;height:auto;"/>
 
 La création d'un projet peut se faire comme suit:
 
@@ -108,7 +108,9 @@ Dans cet exemple, j'ai mis les imports en en-têtes de fichiers, puis, j'ai déf
 **Conseil :** Tant que possible, il faut essayer d'appliquer les principes recommandés par le standard [PEP8](https://peps.python.org/pep-0008/) (Python Enhancement Proposals) qui définit le style de code applicable au code Python. Cela permet un code plus lisible et de meilleur qualité.
 
 > _Docstring / Commentaires ?_
+>
 > Lorsque vous produisez le code, il est important de le documenter. Cependant, il n'existe pas une seule manière de faire cette documentation. Le docstring est la norme python pour documenter ce que fait une fonction (c'est le Quoi). Cela sert avant tout aux utilisateurs de votre code ainsi qu'aux développeurs. On retrouve cette documentation sous la fonction.
+>
 > Cependant, il est aussi important de documenter le Comment. C'est ce qui permet à un autre développeur de modifier votre code et d'assurer sa maintenabilité. Cela peut être fait à l'aide des commentaires dans le code. Cela ne remplace pas le fait d'avoir un code lisible (nom de variables parlants, conditions claires), mais cela permet de savoir ce que le code est en train d'effectuer. Il faut trouver le compromis entre trop de commentaires, et un code sans commentaire qui est illisible.
 
 ### Un exemple d'application R simple

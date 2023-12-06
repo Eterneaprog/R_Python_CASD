@@ -51,7 +51,3 @@ git clone C:/Users/Public/Documents/nom_du_dossier_à_cloner/
 ```
 
 Vous pouvez maintenant éditer votre dépôt, et envoyer vos modifications comme vous le feriez hors de la bulle !
-
-## Utiliser un serveur gitlab
-
-...
