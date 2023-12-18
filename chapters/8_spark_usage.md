@@ -1,13 +1,13 @@
-# Utiliser Spark pour faire des calculs
+# 🌠 Utiliser Spark pour faire des calculs
 
 Dans les précédents chapitres, nous avons appris comment installer un client pour utiliser Spark, en mode Local ou en mode Cluster. Nous avons également appris comment demander des ressources, et fermer notre session. Voyons maintenant comment utiliser ces outils afin d'effectuer des calculs. Il existe de nombreuses ressources, en particulier la [documentation officielle de Spark](https://spark.apache.org/docs/latest/quick-start.html). Nous allons ici voir des exemples fondamentaux :
 
-- Comment exécuter une requête SQL
-- Comment joindre deux tables avec Spark
+* Comment exécuter une requête SQL
+* Comment joindre deux tables avec Spark
 
 Ces deux exemples seront traités en SparklyR et PySpark.
 
-Je ne présenterai pas dans ce guide les utilisations avancées de Spark (Gestion des graph avec GraphX, machine Learning avec MLlib ou encore le mode streaming). Ces utilisations sont très spécifiques, mais font également l'objet de documentation en ligne. Nous faisons mention de leur existence car ces librairies sont très puissantes. Elles permettent des applications sur des volumes de données qui ne sont pas comparables avec les autres librairies disponibles sur le marché.
+Je ne présenterai pas dans ce guide les utilisations avancées de Spark (Gestion des graphs avec GraphX, Machine Learning avec MLlib ou encore le mode streaming). Ces utilisations sont très spécifiques, mais font par ailleurs l'objet de documentation en ligne. Nous faisons mention de leur existence, car ces librairies sont très puissantes. Elles permettent des applications sur des volumes de données qui ne sont pas comparables avec les autres librairies disponibles sur le marché.
 
 ## Exécuter une requête SQL
 
@@ -30,8 +30,7 @@ show(result)
 spark_disconnect(sc)
 ```
 
-Ici, j'ai choisi de faire une requête SQL très simple, composée d'un SELECT, un FROM et un WHERE. Je vais donc récupérer tout les colonnes de la table, mais en filtrant les lignes selon une colonne particulière.
-J'ai affiché le résultat, et j'ai fermé la session Spark afin de libérer les ressources.
+Ici, j'ai choisi de faire une requête SQL très simple, composée d'un SELECT, un FROM et un WHERE. Je vais donc récupérer toutes les colonnes de la table, mais en filtrant les lignes selon une colonne particulière. J'ai affiché le résultat, et j'ai fermé la session Spark afin de libérer les ressources.
 
 ### PySpark
 
@@ -54,21 +53,13 @@ J'ai ici imaginé une table France, contenant les départements et leur région 
 
 ## Effectuer une jointure simple
 
-Dans cette exemple, deux tables seront créés, mais on pourrait les charger depuis des fichiers dans des Spark DataFrames directement.
+Dans cet exemple, deux tables seront créées, mais on pourrait les charger depuis des fichiers dans des Spark DataFrames directement.
 
-| id | valeur1 |   | id | valeur2 |
-|:--:|:-------:|:-:|:--:|:-------:|
-|  1 |    A    |   |  2 |    X    |
-|  2 |    B    |   |  3 |    Y    |
-|  3 |    C    |   |  1 |    Z    |
+<table><thead><tr><th width="73" align="center">id</th><th width="261" align="center">valeur1</th><th width="40"></th><th width="67" align="center">id</th><th align="center">valeur2</th></tr></thead><tbody><tr><td align="center">1</td><td align="center">A</td><td></td><td align="center">2</td><td align="center">X</td></tr><tr><td align="center">2</td><td align="center">B</td><td></td><td align="center">3</td><td align="center">Y</td></tr><tr><td align="center">3</td><td align="center">C</td><td></td><td align="center">1</td><td align="center">Z</td></tr></tbody></table>
 
-On transforme les dataframes créés en Spark DataFrames avec les noms de colonnes appropriés. Enfin, on performe une jointure sur les deux tables.
+On transforme les DataFrames créés en Spark DataFrames avec les noms de colonnes appropriés. Enfin, on performe une jointure sur les deux tables.
 
-| id | valeur1 | valeur2 |
-|:--:|:-------:|:-------:|
-|  1 |    A    |    Z    |
-|  2 |    B    |    X    |
-|  3 |    C    |    Y    |
+<table><thead><tr><th width="73" align="center">id</th><th width="324" align="center">valeur1</th><th align="center">valeur2</th></tr></thead><tbody><tr><td align="center">1</td><td align="center">A</td><td align="center">Z</td></tr><tr><td align="center">2</td><td align="center">B</td><td align="center">X</td></tr><tr><td align="center">3</td><td align="center">C</td><td align="center">Y</td></tr></tbody></table>
 
 Voyons comment effectuer cette manipulation en SparklyR et en PySpark.
 
@@ -113,4 +104,4 @@ result.show()
 spark.stop()
 ```
 
-Dans les deux exemples, on charge d'abord les données, puis ont effectue la jointure entre les deux dataframes créés. Enfin, on affiche les résultats avant de fermer la session. Même s'il s'agit du mode local, la fermeture de la session est une bonne pratique qu'il faut appliquer systématiquement à la fin d'un code Spark pour libérer les ressources.
+Dans les deux exemples, on charge d'abord les données, puis on effectue la jointure entre les deux DataFrames créés. Enfin, on affiche les résultats avant de fermer la session. Même s'il s'agit du mode local, la fermeture de la session est une bonne pratique qu'il faut appliquer systématiquement à la fin d'un code Spark pour libérer les ressources.

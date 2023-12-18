@@ -1,6 +1,6 @@
-# Organiser et gérer son projet
+# 📂 Organiser et gérer son projet
 
-## Python: Gérer son environnement de travail avec conda
+## Python : Gérer son environnement de travail avec conda
 
 > _Qu'est-ce qu'un environnement python?_
 
@@ -10,7 +10,7 @@ Conda est un outil très puissant: il permet de créer et gérer vos environneme
 
 ### Création de l’environnement
 
-D’abord nous allons créer un environnement nommé projet_1 pour votre projet, en version 3.9 dans cet exemple. Il est recommandé de créer un environnement par projet, afin que chaque environnement soit isolé, il n’y aura ainsi pas de conflits:
+D’abord nous allons créer un environnement nommé projet\_1 pour votre projet, en version 3.9 dans cet exemple. Il est recommandé de créer un environnement par projet, afin que chaque environnement soit isolé, il n’y aura ainsi pas de conflits:
 
 Ouvrez le dossier raccourcis présents sur le bureau de votre SD-Box une fois connecté à votre session. Vous y trouverez un raccourci vers Minconda Prompt. Il s'agit tout simplement d'un terminal de commande où Anaconda est accessible:
 
@@ -18,8 +18,7 @@ Ouvrez le dossier raccourcis présents sur le bureau de votre SD-Box une fois co
 conda create --name projet_1 python --offline
 ```
 
-Cette commande utilise anaconda (conda) afin de créer un environnement (create), le nommer projet_1 (option name) et demander l'installation de python (option python). Enfin, nous sommes dans un environnement sans internet d'où le paramètre --offline.
-
+Cette commande utilise anaconda (conda) afin de créer un environnement (create), le nommer projet\_1 (option name) et demander l'installation de python (option python). Enfin, nous sommes dans un environnement sans internet d'où le paramètre --offline.
 
 **Attention :** Python2 ainsi que les versions antérieures à la version 3.8 ne sont pas disponibles sur le CASD. Il est déconseillé d'utiliser ces versions même en dehors car peu de librairies modernes acceptent encore de travailler dans ces versions de Python.
 
@@ -39,7 +38,7 @@ conda activate projet_1
 
 **Attention:** Il faudra activer votre environnement avant l’exécution de votre code python ou d’effectuer des manipulations d’installation. Certains outils, tel que des environnements de développements, automatisent cette étape, mais ce n’est pas systématique. Les environnements de développements seront présentés dans une autre fiche.
 
-Les autres commandes associées au système conda sont résumées dans [cette fiche](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf).
+Les autres commandes associées au système conda sont résumées dans [cette fiche](https://docs.conda.io/projects/conda/en/4.6.0/\_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf).
 
 ## Structurer son arbre de fichiers et son code
 
@@ -51,22 +50,22 @@ De même, on privilégie presque systématiquement le découpage d’une tâche 
 
 ### Les fichiers à créer lors d’un nouveau projet python
 
-D’abord, on commence par créer un fichier requirements.txt. Ce fichier permet de noter l’ensemble des librairies dont notre projet a besoin. Il nous sera très utile par la suite car il permettra à un autre collaborateur de notre bulle projet de créer un environnement à l'identique du nôtre (voir [Travail collaboratif](4_collaborate.md)). On le remplira dans le chapitre [gérer les paquets](2_packages.md), il restera vide pour l’instant.
+D’abord, on commence par créer un fichier requirements.txt. Ce fichier permet de noter l’ensemble des librairies dont notre projet a besoin. Il nous sera très utile par la suite car il permettra à un autre collaborateur de notre bulle projet de créer un environnement à l'identique du nôtre (voir [Travail collaboratif](4\_collaborate.md)). On le remplira dans le chapitre [gérer les paquets](2\_packages.md), il restera vide pour l’instant.
 
 Ensuite, créons un fichier main.py. Ce fichier sera le seul point d’entrée dans notre programme. Il doit rester très court et son rôle est uniquement d’appeler les différents modules et fonctions de notre programme. Le vrai code métier n’y figure jamais.
 
 Enfin, on peut créer des sous dossiers et fichiers selon nos besoins:
 
-- Un dossier app: on y concentrera nos fichiers Python contenant le «vrai» code.
-- Un dossier test: il contiendra les fichiers de tests de nos fonctions
-- Un dossier resources: il peut contenir les fichiers images, des données nécessaires au programme, etc
-- Un fichier readme.md: il contient les instructions pour lancer le programme
-- Un fichier License contenant la licence du programme (open-source, tous droits réservés …)
-- Un fichier .gitignore pour retirer du visionnage certains fichiers indésirables
+* Un dossier app: on y concentrera nos fichiers Python contenant le «vrai» code.
+* Un dossier test: il contiendra les fichiers de tests de nos fonctions
+* Un dossier resources: il peut contenir les fichiers images, des données nécessaires au programme, etc
+* Un fichier readme.md: il contient les instructions pour lancer le programme
+* Un fichier License contenant la licence du programme (open-source, tous droits réservés …)
+* Un fichier .gitignore pour retirer du visionnage certains fichiers indésirables
 
 Ces éléments ne sont en général pas nécessaires pour faire fonctionner le code, mais ils rendent le développement vraiment plus simple, d’où le fait que peu de projets s’en passent aujourd’hui. Voici un exemple d’architecture:
 
-<img src="./images/arbre.png" alt="Arborescence" style="width:100%;height:auto;"/>
+<figure><img src="images/arbre.png" alt=""><figcaption><p>Les ressources d'un projet Python doivent être bien organisées</p></figcaption></figure>
 
 Ici le dossier ressources est séparé entre un dossier data et un dossier img.
 
