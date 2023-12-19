@@ -1,7 +1,7 @@
 # Table of contents
 
 * [👨🏫 Bienvenue !](README.md)
-* [Chapitres](chapters/README.md)
+* [La data science au CASD](chapters/README.md)
   * [📂 Organiser et gérer son projet](chapters/1\_organise.md)
   * [📦 Gérer les paquets associés à votre projet](chapters/2\_packages.md)
   * [💻 Développer votre application!](chapters/3\_code.md)
