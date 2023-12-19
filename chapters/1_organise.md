@@ -40,7 +40,7 @@ conda activate projet_1
 
 Les autres commandes associées au système conda sont résumées dans [cette fiche](https://docs.conda.io/projects/conda/en/4.6.0/\_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf).
 
-> _Mon environnement est créé, mais je ne le retrouve pas dans VSCode. Que faire_&#x20;
+> _Mon environnement est créé, mais je ne le retrouve pas dans VSCode. Que faire ?_
 
 > Pour utiliser VSCode avec votre environnement, il faut avoir installé les extensions liées à Python (voir chapitre : Développer votre application à la [section VSCode](3\_code.md#vscode)) . Ensuite, utilisez ctrl + maj + p afin de séléctionner l'environnement Python ainsi créé et l'ajouter à VSCode.
 
