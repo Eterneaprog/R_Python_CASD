@@ -40,6 +40,10 @@ conda activate projet_1
 
 Les autres commandes associées au système conda sont résumées dans [cette fiche](https://docs.conda.io/projects/conda/en/4.6.0/\_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf).
 
+> _Mon environnement est créé, mais je ne le retrouve pas dans VSCode. Que faire_&#x20;
+
+> Pour utiliser VSCode avec votre environnement, il faut avoir installé les extensions liées à Python (voir chapitre : Développer votre application à la [section VSCode](3\_code.md#vscode)) . Ensuite, utilisez ctrl + maj + p afin de séléctionner l'environnement Python ainsi créé et l'ajouter à VSCode.
+
 ## Structurer son arbre de fichiers et son code
 
 Lors d’un projet utilisant du code, pour la statistique ou l’informatique, il est important de structurer et d’organiser son code. Cela permet de le maintenir dans le temps, cela simplifie la recherche d’erreurs et sur le long terme, cela permet de le réutiliser.
