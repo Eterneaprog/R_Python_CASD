@@ -11,3 +11,5 @@ Dans le dossier des raccourcis, vous trouverez trois dossiers :
 * Espace Projet : Les imports et les sources de données de votre projet.
 
 Vous pourrez donc échanger des fichiers via l'espace commun.
+
+<figure><img src="../.gitbook/assets/Espace partagé.PNG" alt=""><figcaption><p>Ici, on retrouve bien les trois dossiers dans le dossier raccourcis de votre bureau</p></figcaption></figure>

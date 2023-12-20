@@ -6,6 +6,8 @@ En python, le gestionnaire de paquets à utiliser au CASD est pip car c’est un
 
 * **Lancez le script pip-install-package depuis votre dossier raccourci situé sur votre bureau**. Ne fermez pas la fenêtre obtenue tant que vos packages ne sont pas installés.
 
+<figure><img src="../.gitbook/assets/Install-package.PNG" alt=""><figcaption><p>Le script d'installation de paquets disponible dans le dossier Python devrait ressembler à ceci. Il faut le laisser ouvert pendant la manipulation !</p></figcaption></figure>
+
 L’environnement conda de votre choix doit être créé et activé (voir chapitre 1). Il vous faudra ouvrir un Miniconda prompt depuis l'espace raccourci et utiliser la commande :
 
 * Dans l'anaconda prompt ouvert, saisissez :
@@ -19,6 +21,8 @@ puis :
 ```bash
 pip install nom_du_package_souhaité
 ```
+
+<figure><img src="../.gitbook/assets/Install-package2.PNG" alt=""><figcaption><p>Ici, on observe que pip contacte le serveur local afin de procéder à l'installation de Pandas et de ses dépendances !</p></figcaption></figure>
 
 Dans votre code python, utilisez cette instruction pour importer votre paquet, comme vous le feriez en dehors de l'espace de travail sécurisé :
 
@@ -34,4 +38,4 @@ pip install –r requirements.txt
 
 **Attention :** Notez l'utilisation de l'argument -r qui précise que l'on doit installer les paquets depuis un fichier. Oublier le -r impliquera que pip essaiera d'installer un paquet nommé littéralement requirements.txt, et échouera donc.
 
-Avec ce fichier, vous pourrez ainsi exécuter votre code sur une autre machine en créant un environnement python vierge, l’activant, et en exécutant la commande ci-dessus dans le terminal. Votre environnement sera reproductible, pas vous, ainsi que d'autres collaborateurs de votre projet (voir chapitre 4 : Travail collaboratif).
+Avec ce fichier, vous pourrez ainsi exécuter votre code sur une autre machine en créant un environnement python vierge, l’activant, et en exécutant la commande ci-dessus dans le terminal. Votre environnement sera reproductible, pas vous, ainsi que d'autres collaborateurs de votre projet (voir [Travail collaboratif](../4\_collaborate/)).

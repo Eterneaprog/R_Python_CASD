@@ -41,10 +41,15 @@ Ces éléments ne sont en général pas nécessaires pour faire fonctionner le c
 
 <figure><img src="../chapters/images/arbre.png" alt=""><figcaption><p>Les ressources d'un projet Python doivent être bien organisées</p></figcaption></figure>
 
-Ici le dossier ressources est séparé entre un dossier data et un dossier img.
+Ici le dossier ressource est séparé entre un dossier data et un dossier img.
 
-Il existe bien sûr d’autres façons d’organiser son code, mais le principe de séparation du code et de son contexte s’applique en général dans les projets informatiques. En effet, le répertoire ci-dessus peut contenir toutes sortes de fichiers en plus: fichiers de paquets, fichiers d’environnement, etc. C’est pour cela qu’il ne faut pas y mélanger le code source qui est rangé dans le répertoire app.
+Il existe bien sûr d’autres façons d’organiser son code, mais le principe de séparation du code et de son contexte s’applique en général dans les projets informatiques. En effet, le répertoire ci-dessus peut contenir toutes sortes de fichiers en plus : fichiers de paquets, fichiers d’environnement, etc. C’est pour cela qu’il ne faut pas y mélanger le code source qui est rangé dans le répertoire app.
 
 ### Les fichiers à créer lors d’un nouveau projet R
 
-Un projet R peut tout à fait bénéficier d’une architecture aussi solide que celle d’une application python. Par exemple, le package [shinygouv](https://github.com/spyrales/shinygouv) permet de réaliser des applications au style bien connu de l’état, avec le langage R. Ce package utilise (entre autre) une licence, des tests, un dossier contenant les codes sources, un fichier Readme, et un fichier app.R. Il a donc une architecture très proche de celle que nous avons vu pour les projets Python.
+Un projet R peut tout à fait bénéficier d’une architecture aussi solide que celle d’une application python. Par exemple, le package [shinygouv](https://github.com/spyrales/shinygouv) permet de réaliser des applications au style bien connu de l’état, avec le langage R. Ce package utilise (entre autres) une licence, des tests, un dossier contenant les codes sources, un fichier Readme, et un fichier app.R. Il a donc une architecture très proche de celle que nous avons vue pour les projets Python.
+
+## Les ressources pour aller plus loin :
+
+* [Structurer votre projet](https://python-guide-pt-br.readthedocs.io/fr/latest/writing/structure.html) du Hitchhiker's guide to Python permet d'approfondir les notions et d'adopter des bonnes pratiques.
+* [Organiser ses scripts](https://juba.github.io/tidyverse/05-organiser.html) du guide introduction à R et au tidyverse de Julien Barnier pour comprendre la structure projet en R.

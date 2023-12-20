@@ -50,6 +50,10 @@ Maintenant, activons l’environnement afin de travailler dedans:
 conda activate projet_1
 ```
 
+<figure><img src="../.gitbook/assets/Création et activation.PNG" alt=""><figcaption><p>Si tout s'est déroulé normalement, voici à quoi devrait ressembler votre Miniconda Prompt</p></figcaption></figure>
+
+
+
 **Attention :** Il faudra activer votre environnement avant l’exécution de votre code python ou d’effectuer des manipulations d’installation. Certains outils, tels que des environnements de développements, automatisent cette étape, mais ce n’est pas systématique. Les environnements de développements seront présentés dans une autre fiche.
 
 Les autres commandes associées au système conda sont résumées sur [cette fiche](https://docs.conda.io/projects/conda/en/4.6.0/\_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf).
