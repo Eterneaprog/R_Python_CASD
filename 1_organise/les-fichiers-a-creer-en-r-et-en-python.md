@@ -12,7 +12,7 @@ layout:
     visible: false
 ---
 
-# 🏛 Les fichiers à créer en R et en Python
+# 👩🏫 Les fichiers à créer en R et en Python
 
 ## Structurer son arbre de fichiers et son code
 
