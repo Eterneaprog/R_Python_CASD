@@ -1,3 +1,17 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: false
+---
+
 # 🚧 Installer et paramétrer Spark
 
 ## Principes généraux
@@ -8,7 +22,7 @@
 
 Voici un aperçu simplifié du fonctionnement d'un cluster Spark :
 
-<figure><img src="images/spark.png" alt=""><figcaption><p>Un exemple de cluster Spark</p></figcaption></figure>
+<figure><img src="../chapters/images/spark.png" alt=""><figcaption><p>Un exemple de cluster Spark</p></figcaption></figure>
 
 Un cluster Spark est un outil puissant qui permet d'accélérer grandement la vitesse d'exécution de vos calculs. De plus, la puissance du cluster et sa taille sont plus modulables qu'une machine seule à laquelle on ajoute des ressources : il suffit d'ajouter des workers. Cependant, l'utilisation de cet outil n'est pas toujours aussi aisée que lorsque l'on s'adresse une machine seule avec R. Voyons d'abord comment installer les paquets nécessaires pour pouvoir s'adresser à Spark en R, puis en python. Ensuite, nous verrons comment réserver des ressources (il s'agit de la notion de Spark Context sur le schéma, aussi appelée SparkSession aujourd'hui). Cela nous permettra de simuler un cluster en exécutant nos codes localement avec Spark. Les personnes possédant un accès à un cluster apprendrons ensuite à modifier l'instruction SparkSession, afin de passer du mode local au mode cluster. Enfin, nous verrons comment utiliser notre cluster pour effectuer des calculs simples.
 

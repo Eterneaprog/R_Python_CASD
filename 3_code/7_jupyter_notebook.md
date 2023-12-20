@@ -1,6 +1,6 @@
-# 🪐 Utiliser Jupyter Notebook
+# 🪐 Jupyter Lab
 
-Jupyter est un outil qui permet de tester toute sorte de code. Il est particulièrement efficace dans l'exploration des données. Il est tout à fait adapté pour effectuer des calculs avec Spark, Python ou même R.
+Jupyter est un outil qui permet de tester toute sorte de code. Il est particulièrement efficace dans l'exploration des données. Il est tout à fait adapté pour effectuer des calculs avec Spark, Python ou même R. Ce n'est pas tout à fait un éditeur au sens de VSCode ou RStudio, car il ne propose pas les mêmes fonctions pour le développement. Cependant, c'est un outil très performant.
 
 ## Installation de Jupyter
 
@@ -18,7 +18,7 @@ Votre installation de Jupyter est effectuée pour votre session. Il n'y a pas be
 * Saisir `jupyter lab`
 * Lorsque Windows vous demande de choisir un programme pour ouvrir la page web, choisir autre programme puis pointer sur « C:\Program Files\Chrome\chrome.exe »
 
-<figure><img src="images/jupyter.png" alt=""><figcaption><p>Un exemple d'utilisation de Jupyter Notebook</p></figcaption></figure>
+<figure><img src="../chapters/images/jupyter.png" alt=""><figcaption><p>Un exemple d'utilisation de Jupyter Notebook</p></figcaption></figure>
 
 ## Utilisation de Jupyter Lab
 
