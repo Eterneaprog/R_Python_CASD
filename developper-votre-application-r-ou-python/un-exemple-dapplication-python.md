@@ -47,11 +47,3 @@ if __name__ == "__main__":
 ```
 
 Dans cet exemple, j'ai mis les imports en en-têtes de fichiers, puis, j'ai défini la fonction principale de mon programme, qui exécute du code métier contenu dans un autre fichier, dans une fonction. Enfin, j'exécute ma fonction principale à l'aide de l'instruction `if __name__ = "__main__".`
-
-**Conseil :** Tant que possible, il faut essayer d'appliquer les principes recommandés par le standard [PEP8](https://peps.python.org/pep-0008/) (Python Enhancement Proposals) qui définit le style de code applicable au code Python. Cela permet un code plus lisible et de meilleure qualité.
-
-> _Docstring / Commentaires ?_
->
-> Lorsque vous produisez le code, il est important de le documenter. Cependant, il n'existe pas une seule manière de faire cette documentation. Le docstring est la norme python pour documenter ce que fait une fonction (c'est le Quoi). Cela sert avant tout aux utilisateurs de votre code ainsi qu'aux développeurs. On retrouve cette documentation sous la fonction.
->
-> Cependant, il est aussi important de documenter le Comment. C'est ce qui permet à un autre développeur de modifier votre code et d'assurer sa maintenabilité. Cela peut être fait à l'aide des commentaires dans le code. Cela ne remplace pas le fait d'avoir un code lisible (nom de variables parlants, conditions claires), mais cela permet de savoir ce que le code est en train d'effectuer. Il faut trouver le compromis entre trop de commentaires, et un code sans commentaire qui est illisible.
