@@ -1,6 +1,6 @@
 # 👩🏫 Bonnes pratiques de code Python
 
-Le premier objectif lorsqu'on produit un code informatique est qu'il fonctionne, et répondre à notre besoin. Cependant, on peut atteindre cet objectif avec un code dit de 'bonne qualité' ou non. \
+Le premier objectif lorsqu'on produit un code informatique est qu'il fonctionne, et réponde à notre besoin. Cependant, on peut atteindre cet objectif avec un code dit de 'bonne qualité' ou non. \
 \
 Nous allons apprendre dans cette section des premières notions sur la qualité du code, et quels sont les avantages très concrets d'appliquer ces principes. Ensuite, nous verrons comment appliquer ces principes à notre code Python.
 

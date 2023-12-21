@@ -3,7 +3,6 @@
 ### Rstudio
 
 > _Quelle différence entre R et Rstudio ?_\
-> \
 > R est un langage de programmation, mais également un logiciel libre capable d'éxecuter du code R. Il ne faut pas le confondre avec RStudio. Il s'agit d'un éditeur de code dédié au langage R. Il propose de visualiser ce que la session R possède en mémoire, de colorer votre code R ou encore de créer et gérer vos projets R. Il est tout à fait possible de faire du R sans Rstudio.
 
 Rstudio est l'environnement de développement pour R le plus populaire. Il possède l'avantage d'être optimisé pour ce langage, il ne nécessite que très peu de configuration avant d'être fonctionnel.

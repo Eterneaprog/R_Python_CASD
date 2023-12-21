@@ -1,6 +1,6 @@
 # 📊 Utiliser Spark via R
 
-Dans le précédent chapitre, nous avons appris comment installer un client pour utiliser Spark, en mode Local ou en mode Cluster. Nous avons également appris comment demander des ressources, et fermer notre session. Voyons maintenant comment utiliser ces outils afin d'effectuer des calculs. Il existe de nombreuses ressources, en particulier la [documentation officielle de Spark](https://spark.apache.org/docs/latest/quick-start.html). Nous allons ici voir des exemples fondamentaux :
+Dans le précédent chapitre, nous avons appris comment [installer un client pour utiliser Spark](6\_spark\_install.md), en mode Local ou en mode Cluster. Nous avons également appris comment demander des ressources, et fermer notre session. Voyons maintenant comment utiliser ces outils afin d'effectuer des calculs. Il existe de nombreuses ressources, en particulier la [documentation officielle de Spark](https://spark.apache.org/docs/latest/quick-start.html). Nous allons ici voir des exemples fondamentaux :
 
 * Comment exécuter une requête SQL
 * Comment joindre deux tables avec Spark

@@ -6,6 +6,6 @@ L'éditeur de code est un outil de développement qui facilite la rédaction de 
 
 Vous pouvez maintenant découvrir plusieurs éditeurs disponibles au CASD et apprendre à les paramétrer dans des environnements sans internet  :&#x20;
 
-* RStudio pour les projets avec le langage R
-* VSCode pour les projets qui utilisent d'autre langage (en particulier Python)
-* JupyterLab pour l'exploration de données (en R/Python/Spark ...)
+* [RStudio](rstudio.md) pour les projets avec le langage R
+* [VSCode](vscode.md) pour les projets qui utilisent d'autre langage (en particulier Python)
+* [JupyterLab](7\_jupyter\_notebook.md) pour l'exploration de données (en R/Python/Spark ...)

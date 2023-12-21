@@ -16,8 +16,6 @@ layout:
 
 > _Qu'est-ce qu'un environnement python?_
 >
->
->
 > C'est un espace dans lequel se trouve une version de l'interpréteur python (3.8, 3.9, ...) ainsi qu'un certain nombre de librairies Python, compatibles dans une certaine version (Numpy, Pandas, Matplotlib ...)
 
 Conda est un outil très puissant : il permet de créer et gérer vos environnements Python pour chacune de vos applications. Ainsi, pas de mélange entre les dépendances et les versions entre vos différents projets (c’est ce que l’on appelle un conflit). Vous aurez également la possibilité d’exécuter votre code sur différentes machines avec beaucoup plus de simplicités (les environnements sont dits ‘reproductibles’). Cette section présente les rudiments de la gestion d’un environnement conda, mais vous trouverez dans les fiches suivantes les bonnes pratiques concernant les dépendances, qui apportent la véritable valeur ajoutée de l’outil conda.
@@ -41,7 +39,7 @@ Pour choisir une version de python spécifique, il suffit d'exécuter la command
 ## Activation
 
 > _A quoi sert l'activation?_
-
+>
 > C'est le fait de préciser avec quel environnement on souhaite travailler. Cela permet de changer de l'environnement de base vers votre environnement spécifique pour le projet.
 
 Maintenant, activons l’environnement afin de travailler dedans:
