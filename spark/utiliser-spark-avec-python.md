@@ -48,7 +48,7 @@ J'ai ici imaginé une table France, contenant les départements et leur région 
 
 Dans cet exemple, deux tables seront créées, mais on pourrait les charger depuis des fichiers dans des Spark DataFrames directement.
 
-<table><thead><tr><th width="76" align="center">id</th><th width="261" align="center">valeur1</th><th width="40"></th><th width="67" align="center">id</th><th align="center">valeur2</th></tr></thead><tbody><tr><td align="center">1</td><td align="center">A</td><td></td><td align="center">2</td><td align="center">X</td></tr><tr><td align="center">2</td><td align="center">B</td><td></td><td align="center">3</td><td align="center">Y</td></tr><tr><td align="center">3</td><td align="center">C</td><td></td><td align="center">1</td><td align="center">Z</td></tr></tbody></table>
+<table><thead><tr><th width="76" align="center">id</th><th width="261" align="center">valeur1</th><th width="67" align="center">id</th><th align="center">valeur2</th><th data-hidden></th></tr></thead><tbody><tr><td align="center">1</td><td align="center">A</td><td align="center">2</td><td align="center">X</td><td></td></tr><tr><td align="center">2</td><td align="center">B</td><td align="center">3</td><td align="center">Y</td><td></td></tr><tr><td align="center">3</td><td align="center">C</td><td align="center">1</td><td align="center">Z</td><td></td></tr></tbody></table>
 
 On transforme les DataFrames créés en Spark DataFrames avec les noms de colonnes appropriés. Enfin, on performe une jointure sur les deux tables.
 
