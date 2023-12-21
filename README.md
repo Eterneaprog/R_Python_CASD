@@ -18,9 +18,9 @@ layout:
 
 Vous êtes habilité ou en cours d’habilitation pour travailler sur des données confidentielles auxquelles vous accéderez depuis le Centre d’Accès Sécurisé aux Données (CASD). Vous souhaitez travailler sur ces données avec des outils de dernière génération et optimiser les performances de votre environnement de travail sécurisé. Ce guide présente des conseils pour la réalisation de vos projets faisant intervenir des outils modernes dans un contexte de haute sécurité.
 
-D'abord, nous verrons comment préparer l'environnement de travail afin de l'utiliser dans les meilleures conditions. Vous aurez ainsi un environnement aussi proche que possible de celui dont vous bénéficiez sans les contraintes de sécurité. (Peut-être même mieux :sunglasses:)
+D'abord, nous verrons comment préparer l'environnement de travail afin de l'utiliser dans les meilleures conditions. Vous aurez ainsi un environnement aussi proche que possible de celui dont vous bénéficiez sans les contraintes de sécurité.
 
-&#x20;Ensuite, vous trouverez des ressources pour apprendre comment réagir face à des lenteurs d'exécution, comment identifier l'élément qui provoque une saturation et apporter des réponses adaptées en optimisant votre code ou le stockage de vos données. Vous pourrez ainsi optimiser vos processus, et en faire plus avec les mêmes ressources.
+Ensuite, vous trouverez des ressources pour apprendre comment réagir face à des lenteurs d'exécution, comment identifier l'élément qui provoque une saturation et apporter des réponses adaptées en optimisant votre code ou le stockage de vos données. Vous pourrez ainsi optimiser vos processus, et en faire plus avec les mêmes ressources.
 
 ## Comment fonctionne cette documentation ?
 
