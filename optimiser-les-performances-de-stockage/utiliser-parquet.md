@@ -20,7 +20,7 @@ Le parquet est un format de stockage de données en colonnes, optimisé pour la 
 Parquet est très efficace pour effectuer de l'analyse. Cependant, il est inefficace pour les opérations transactionnelles.&#x20;
 
 Par exemple, l'entrainement d'un modèle ou la réalisation d'une régression sur des grands nombres d'individus sont des cas d'usages très adaptés pour Parquet. À l'inverse, Parquet est inefficace s'il doit être utilisé comme une base de données dans laquelle on doit écrire des données de manière fréquente. Le critère déterminant est : combien d'opérations d'écritures et de lecture mon application va-t-elle utiliser ?\
-Si la réponse est plusieurs opérations de lecture, écriture, modification, il faut se tourner vers [une base de données SQL](utiliser-une-base-sql.md). Si la réponse est une seule opération d'écriture que l'on va utiliser pour lire à de nombreuses reprises, alors Parquet est très adapté. Ce sera typiquement le cas si on fige la base de données d'une application pour y faire de l'analyse statistique.
+Si la réponse est plusieurs opérations de lecture, écriture, modification, il faut se tourner vers [une base de données SQL](utiliser-une-base-sql/). Si la réponse est une seule opération d'écriture que l'on va utiliser pour lire à de nombreuses reprises, alors Parquet est très adapté. Ce sera typiquement le cas si on fige la base de données d'une application pour y faire de l'analyse statistique.
 
 ## Les outils avec lesquels utiliser Parquet
 

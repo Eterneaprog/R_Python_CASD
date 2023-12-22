@@ -11,7 +11,7 @@ Je ne présenterai pas dans ce guide les utilisations avancées de Spark (Gestio
 
 ## Faire une requête SQL
 
-Si vous démarrez un processus de conversion de code vers Spark, il est possible de ne pas immédiatement convertir l'ensemble du code. En effet, Spark est tout à fait capable d'exécuter du code SQL. Son moteur de calcul est moins optimisé que lorsqu'il exécute du code Spark. Cependant, cela reste une option intéressante en raison de son faible coût de code, et de ses performances tout à fait raisonnables.
+Si vous démarrez un processus de conversion de code vers Spark, il est possible de ne pas immédiatement convertir l'ensemble du code. En effet, Spark est tout à fait capable d'exécuter [du code SQL](../optimiser-les-performances-de-stockage/utiliser-une-base-sql/les-bases-sql.md). Son moteur de calcul est moins optimisé que lorsqu'il exécute du code Spark. Cependant, cela reste une option intéressante en raison de son faible coût de code, et de ses performances tout à fait raisonnables.
 
 Une fois l'environnement configuré comme expliqué dans le chapitre précédent, exécuter une requête SQL s'effectue de la manière suivante :
 

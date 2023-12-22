@@ -2,7 +2,7 @@
 
 Vous aurez besoin du package duckdb qui est disponible sur notre serveur local. Il peut être installé avec la [procédure classique](../../2\_packages/installer-les-paquets-python.md), n'oubliez pas de lancer le script pip-install-packages et d'activer votre environnement avant d'effectuer la commande `pip install duckdb`.
 
-## Faire des requêtes sur un fichier parquet grâce à DuckDB
+## Faire des requêtes [SQL](../utiliser-une-base-sql/les-bases-sql.md) sur un fichier parquet grâce à [DuckDB](duckdb.md)
 
 Interrogeons d'abord un fichier parquet :
 

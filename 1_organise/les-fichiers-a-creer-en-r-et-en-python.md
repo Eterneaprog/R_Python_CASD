@@ -24,11 +24,11 @@ De même, on privilégie presque systématiquement le découpage d’une tâche 
 
 ### Les fichiers à créer lors d’un nouveau projet python
 
-D’abord, on commence par créer un fichier requirements.txt. Ce fichier permet de noter l’ensemble des librairies dont notre projet a besoin. Il nous sera très utile par la suite car il permettra à un autre collaborateur de notre bulle projet de créer un environnement à l'identique du nôtre (voir [Travail collaboratif](../4\_collaborate/)). On le remplira dans le chapitre [gérer les paquets](../2\_packages/), il restera vide pour l’instant.
+D’abord, on commence par créer un fichier requirements.txt. Ce fichier permet de noter l’ensemble des librairies dont notre projet a besoin. Il nous sera très utile par la suite, car il permettra à un autre collaborateur de notre bulle projet de créer un environnement à l'identique du nôtre (voir [Travail collaboratif](../4\_collaborate/)). On le remplira dans le chapitre [gérer les paquets](../2\_packages/), il restera vide pour l’instant.
 
 Ensuite, créons un fichier main.py. Ce fichier sera le seul point d’entrée dans notre programme. Il doit rester très court et son rôle est uniquement d’appeler les différents modules et fonctions de notre programme. Le vrai code métier n’y figure jamais.
 
-Enfin, on peut créer des sous dossiers et fichiers selon nos besoins:
+Enfin, on peut créer des sous dossiers et fichiers selon nos besoins :
 
 * Un dossier app: on y concentrera nos fichiers Python contenant le «vrai» code.
 * Un dossier test: il contiendra les fichiers de tests de nos fonctions
@@ -37,7 +37,7 @@ Enfin, on peut créer des sous dossiers et fichiers selon nos besoins:
 * Un fichier License contenant la licence du programme (open-source, tous droits réservés …)
 * Un fichier .gitignore pour retirer du visionnage certains fichiers indésirables
 
-Ces éléments ne sont en général pas nécessaires pour faire fonctionner le code, mais ils rendent le développement vraiment plus simple, d’où le fait que peu de projets s’en passent aujourd’hui. Voici un exemple d’architecture:
+Ces éléments ne sont en général pas nécessaires pour faire fonctionner le code, mais ils rendent le développement vraiment plus simple, d’où le fait que peu de projets s’en passent aujourd’hui. Voici un exemple d’architecture :
 
 <figure><img src="../chapters/images/arbre.png" alt=""><figcaption><p>Les ressources d'un projet Python doivent être bien organisées</p></figcaption></figure>
 

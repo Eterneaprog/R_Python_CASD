@@ -7,7 +7,7 @@ Avant toute chose, installer le package DuckDB est obligatoire pour les manipula
 
 ## Interroger un fichier parquet :
 
-Exécuter une requête SQL sur un fichier parquet avec duckDB ne prend que 4 lignes !
+Exécuter une [requête SQL](../utiliser-une-base-sql/les-bases-sql.md#la-syntaxe-sql-pour-effectuer-des-requetes) sur un fichier parquet avec duckDB ne prend que 4 lignes !
 
 ```r
 library("duckdb")
@@ -20,7 +20,7 @@ print(con)
 
 ```
 
-## Créer, remplir et interroger sa propre base
+## [Créer, remplir](../utiliser-une-base-sql/les-bases-sql.md#creer-des-tables-et-inserer-des-donnees) et interroger sa propre base
 
 Ce n'est pas beaucoup plus compliqué puisqu'il suffit d'utiliser la syntaxe SQL classique :
 
