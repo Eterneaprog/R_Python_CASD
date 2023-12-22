@@ -28,7 +28,7 @@ Il faut la choisir si :&#x20;
 Système de gestion de base de données relationnelles open-source, MariaDB est un logiciel de référence, car il propose la compatibilité avec MySQL, est plus performant que celui-ci et gratuit.\
 Initialement fondé par les créateurs de MySQL, suite au rachat de l'entreprise fondatrice par Oracle,&#x20;
 
-Il faut la choisir :
+Il faut la choisir si :
 
 * Votre projet utilise du Code SQL standard
 * Vous cherchez un haut niveau de performance
