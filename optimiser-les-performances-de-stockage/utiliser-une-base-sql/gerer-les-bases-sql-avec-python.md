@@ -53,4 +53,50 @@ conn.close()
 
 ## Travailler avec MariaDB / MySQL
 
-A venir.
+Pour réaliser ce tutoriel, vous aurez besoin de la librairie mysql-connector-python qui n'est pas intégrée à python (il est nécessaire d'effectuer d'installation avec pip) :&#x20;
+
+```bash
+pip install mysql-connector-python
+```
+
+Nous allons ensuite importer la librairie :
+
+```python
+import mysql.connector
+```
+
+et créer notre connexion à la base de données :
+
+```python
+# Connexion à la base de données
+conn = mysql.connector.connect(
+    host="localhost",
+    user="votre_utilisateur",
+    password="votre_mot_de_passe",
+    database="nom_de_votre_base_de_donnees"
+)
+
+# Création de l'objet curseur pour exécuter les requêtes
+cursor = conn.cursor()
+```
+
+Nous pouvons ensuite effectuer des opérations SQL classiques :&#x20;
+
+```python
+conn.start_transaction()
+
+# Exemple d'opération : insertion de données
+insert_query = "INSERT INTO utilisateurs (nom, age) VALUES (%s, %s)"
+data = ('Alice', 30)
+cursor.execute(insert_query, data)
+
+# Valider la transaction
+conn.commit()
+```
+
+Finalement, on peut fermer la connexion :
+
+```
+cursor.close()
+conn.close()
+```

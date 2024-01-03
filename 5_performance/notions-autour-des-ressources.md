@@ -11,7 +11,7 @@ Le processeur possède deux caractéristiques qui nous intéressent particulièr
 * Sa fréquence : elle peut grossièrement être considérée comme proportionnelle au nombre d'opérations par secondes. Une fréquence plus élevée est en général synonyme de temps de traitements plus courts.
 * Son nombre de cœurs : C'est le nombre de traitements que le processeur peut effectuer en même temps. Il s'agit d'un élément fondamental pour le multitâche ainsi que les calculs parallèles.
 
-Il est très important de bien comprendre le comportement de votre logiciel et son utilisation des cœurs. En effet, si un processus est monocœur, peu importe le reste de la configuration (mémoire en particulier), une augmentation forte du nombre d'observations augmentera très fortement le temps de calcul ! Nous verrons dans la section suivante comment optimiser le code par le parallélisme.
+Il est très important de bien comprendre le comportement de votre logiciel et son utilisation des cœurs. En effet, si un processus est monocœur, peu importe le reste de la configuration (mémoire en particulier), une augmentation forte du nombre d'observations augmentera très fortement le temps de calcul ! Les opérations d'un processus monocœur sont effectuées les unes à la suite des autres. Par conséquent, il y a proportionnalité entre le nombre d'opérations et la durée de traitement.  Nous verrons par la suite comment optimiser [le code par le parallélisme.](paralleliser-son-code-python.md)
 
 ### La mémoire
 
