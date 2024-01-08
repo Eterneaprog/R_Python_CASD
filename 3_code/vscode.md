@@ -21,7 +21,7 @@ Vous pouvez installer de nombreuses extensions VSCode dans la bulle. Pour cela, 
 
 * Dans VSCode, appuyez sur Ctrl+Shift+X pour ouvrir le menu extensions
 * Dans les ... de ce menu, cliquez sur 'installer depuis VSIX'.
-* Choissisez un fichier VSIX correspond à l'extension que vous souhaitez installer dans le dossier C:\Users\Public\Documents\VSCodeExtension
+* Choissisez un fichier VSIX correspond à l'extension que vous souhaitez installer dans le dossier S:\Users\Public\Documents\VSCodeExtension
 
 Deux extensions sont particulièrement recommandées : ms-python.python et ms-tollsai.jupyter.
 
