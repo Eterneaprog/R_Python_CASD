@@ -25,9 +25,9 @@ hdfs dfs -get /chemin-sur-hdfs/fichier.csv /chemin-systeme-local.csv
 Lire un CSV ou un fichier parquet peut être fait avec les commandes suivantes (il faut avoir défini un [spark\_connect](sparklyr-en-mode-cluster.md#adapter-la-configuration) au préalable) :&#x20;
 
 ```r
-spark_read_csv(sc, name = "nom_table", path "hdfs://adresseNameNode:Port/fichier.csv")
+spark_read_csv(sc, name = "nom_table", path = "hdfs://adresseNameNode:Port/fichier.csv")
 ```
 
 ```r
-spark_read_parquet(sc, name = "nom_table", path "hdfs://adresseNameNode:Port/fichier.parquet")
+spark_read_parquet(sc, name = "nom_table", path = "hdfs://adresseNameNode:Port/fichier.parquet")
 ```
