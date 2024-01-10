@@ -26,7 +26,7 @@ Avoir un code de bonne qualité coute un tout petit peu plus cher à produire, m
 
 Voyons maintenant les techniques pratiques pour produire un code de bonne qualité à moindres frais. En effet, il existe beaucoup d'outils qui peuvent vous aider à changer peu de choses dans votre façon de coder, tout en assurant les propriétés que nous avons citées précédemment.                            &#x20;
 
-## En pratique (avec Python)
+## En pratique :
 
 ### Comment cibler le besoin ?
 
@@ -36,7 +36,7 @@ Pour répondre à cet objectif, il n'y a un qu'un seul leitmotiv : "Réfléchir 
 * Suis-je en train de produire un code que d'autres ont déjà fait 10 fois avant moi, en mieux, ou suis-je en train de traiter un besoin très spécifique ?&#x20;
   * **Exemple :** Recoder un système de date en Python, alors que Datetime ou Pendulum sont des librairies totalement fonctionnelles pour cela, n'est pas très pertinent et ne sert probablement pas mon objectif métier de façon directe
 * Mes choix technologiques sont-ils bien adaptés à mon objectif ?&#x20;
-  * **Exemple :** Utiliser un logiciel de production statistique (SAS / SQL / STATA / SPSS / R) alors que mon objectif est le data management. Ne faut-il pas utiliser une simple base SQL qui est prévue pour cet usage plutôt qu'un outil qui a pour fonction primaire de faire des analyses statistiques sur une base construite.
+  * **Exemple :** Utiliser un logiciel de production statistique (SAS  / STATA / SPSS / R) alors que mon objectif est le data management. Ne faut-il pas utiliser une simple base SQL qui est prévue pour cet usage plutôt qu'un outil qui a pour fonction primaire de faire des analyses statistiques sur une base construite ?
 
 Une fois que les choix technologiques ont été définis par rapport à notre objectif, on peut concevoir notre code. Il faut alors définir quelles sont les fonctions que l'on veut coder. On cherche dans cette étape à décomposer notre tâche générale en tâches de plus petites tailles qui vont s'enchainer de façon logique et cohérente.&#x20;
 
@@ -115,7 +115,7 @@ S'il fallait résumer rapidement la PEP8 :&#x20;
 * Limiter la taille des lignes (79 caractères maximum)
 * Mettre des espaces avant et après les opérateurs : `a == b` et non `a==b`
 
-À mon sens, la PEP8 n'est à suivre strictement, mais doit être vue comme un guide de bonnes pratiques. Le plus important est de loin la cohérence du code. Il resterait préférable d'avoir un code consistant qui utilise le mixedCase : `maClasse` pour les classes qu'un code qui utiliserait un mélange de Snakecase et de CamelCase par exemple.
+À mon sens, la PEP8 n'est pas à suivre strictement, mais doit être vue comme un guide de bonnes pratiques. Le plus important est de loin la cohérence du code. Il resterait préférable d'avoir un code consistant qui utilise le mixedCase : `maClasse` pour les classes qu'un code qui utiliserait un mélange de Snakecase et de CamelCase par exemple.
 
 ### Les tests
 
