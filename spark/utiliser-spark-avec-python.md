@@ -14,16 +14,37 @@ layout:
 
 # 🐍 Utiliser Spark avec Python
 
-Dans le précédent chapitre, nous avons appris comment [installer un client pour utiliser Spark](6\_spark\_install.md), en mode Local ou en mode Cluster. Nous avons également appris comment demander des ressources, et fermer notre session. Voyons maintenant comment utiliser ces outils afin d'effectuer des calculs. Il existe de nombreuses ressources, en particulier la [documentation officielle de Spark](https://spark.apache.org/docs/latest/quick-start.html). Nous allons ici voir des exemples fondamentaux :
+## Configurer Spark en mode local
+
+Dans le précédent chapitre, nous avons appris comment [installer un client pour utiliser Spark](6\_spark\_install.md). Nous allons maintenant réserver des ressources afin de préparer Spark pour notre traitement. Voici la marche à suivre pour se connecter en mode local :
+
+```python
+from pyspark.sql import SparkSession
+
+# Configuration des ressources
+spark = SparkSession.builder \
+    .appName("ExempleJointureSimple") \  # Nom de l'application Spark
+    .config("spark.executor.memory", "8g") \  # Mémoire allouée par exécuteur
+    .config("spark.executor.cores", 4) \  # Coeurs par exécuteur
+    .config("spark.driver.memory", "4g") \  # Mémoire allouée au driver (processus principal)
+    .config("spark.driver.cores", 2) \  # Coeurs alloués au driver
+    .getOrCreate()
+```
+
+Voici un exemple simple de configuration Spark. Les ressources doivent être proportionnelles à la tâche effectuée et aux données traitées par votre application.
+
+## Effectuer des traitements
+
+Voyons désormais comment utiliser ces outils pour effectuer des calculs. Il existe de nombreuses ressources, en particulier la [documentation officielle de Spark](https://spark.apache.org/docs/latest/quick-start.html). Nous allons ici voir des exemples fondamentaux :
 
 * Comment exécuter une requête SQL
 * Comment joindre deux tables avec Spark
 
 Ces deux exemples seront traités en PySpark.
 
-Je ne présenterai pas dans ce guide les utilisations avancées de Spark (Gestion des graphs avec GraphX, Machine Learning avec MLlib ou encore le mode streaming). Ces utilisations sont très spécifiques, mais font par ailleurs l'objet de documentation en ligne. Nous faisons mention de leur existence, car ces librairies sont très puissantes. Elles permettent des applications sur des volumes de données qui ne sont pas comparables avec les autres librairies disponibles sur le marché.
+Je ne présenterai pas dans ce guide les utilisations avancées de Spark (Gestion des graphs avec GraphX, Machine Learning avec MLlib ou encore le mode streaming). Ces utilisations sont très spécifiques, mais font par ailleurs l'objet de documentation en ligne. Je fais mention de leur existence, car ces librairies sont très puissantes. Elles permettent des applications sur des volumes de données qui ne sont pas comparables avec les autres librairies disponibles sur le marché.
 
-## Faire une requête SQL
+### Faire une requête SQL
 
 Si vous démarrez un processus de conversion de code vers Spark, il est possible de ne pas immédiatement convertir l'ensemble du code. En effet, Spark est tout à fait capable d'exécuter du code SQL. Son moteur de calcul est moins optimisé que lorsqu'il exécute du code Spark. Cependant, cela reste une option intéressante en raison de son faible coût de code, et de ses performances tout à fait raisonnables.
 
@@ -44,7 +65,7 @@ spark.stop()
 
 J'ai ici imaginé une table France, contenant les départements et leur région d'appartenance. J'ai compté le nombre de départements par région en utilisant un group by. De plus, il faut toujours fermer sa session avec spark.stop().
 
-## Faire une jointure
+### Faire une jointure
 
 Dans cet exemple, deux tables seront créées, mais on pourrait les charger depuis des fichiers dans des Spark DataFrames directement.
 

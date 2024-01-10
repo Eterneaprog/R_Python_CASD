@@ -2,7 +2,7 @@
 
 ## Se partager des fichiers
 
-Votre session est strictement personnelle. Même les autres personnes associées à votre projet ne peuvent accéder à votre espace de travail. Le CASD vous met donc à disposition un espace commun dans lequel les fichiers sont partagés entre les différents collaborateurs de votre projet. Cet espace commun peut être accédé via le dossier raccourci sur votre bureau.
+Votre session est strictement personnelle. Même les autres personnes associées à votre projet ne peuvent accéder à votre espace de travail. Le CASD vous met donc à disposition un espace commun dans lequel les fichiers sont partagés entre les différents collaborateurs de votre projet. Cet espace commun peut être accédé via le dossier 'Raccourcis' sur votre bureau.
 
 Dans le dossier des raccourcis, vous trouverez trois dossiers :
 
