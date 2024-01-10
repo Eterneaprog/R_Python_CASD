@@ -9,7 +9,7 @@ Pour l'ensemble de ces commandes, il est nécessaire de posséder l'adresse du N
 Il suffit d'utiliser l'instruction -put et de préciser les chemins de fichiers :
 
 ```bash
-hdfs dfs -put /chemin/vers/le/fichier.csv /hdfs://adresseNameNode:Port/file.csv)
+hdfs dfs -put /chemin/vers/le/fichier_source.csv /nom_destination.csv)
 ```
 
 ## Récupérer des données depuis HDFS
@@ -17,7 +17,7 @@ hdfs dfs -put /chemin/vers/le/fichier.csv /hdfs://adresseNameNode:Port/file.csv)
 Il s'agit de la même commande avec l'instruction -get :
 
 ```bash
-hdfs dfs -get /local-file-path /hdfs-file-path
+hdfs dfs -get /chemin-sur-hdfs/fichier.csv /chemin-systeme-local.csv
 ```
 
 ## Utiliser un fichier stocké dans HDFS pour un traitement Spark avec Sparklyr
