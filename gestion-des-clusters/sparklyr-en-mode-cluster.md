@@ -4,7 +4,7 @@
 
 Pour effectuer des traitements avec Sparklyr en mode cluster, il n'y a pas beaucoup de différences avec les traitements en mode local :
 
-<pre class="language-r"><code class="lang-r"><strong>library(sparlyr)
+<pre class="language-r"><code class="lang-r"><strong>library(sparklyr)
 </strong><strong>library(dplyr)
 </strong><strong>
 </strong><strong># Insérer ici vos configurations personelles pour votre session
