@@ -90,8 +90,6 @@ Les opérations de type Narrow peuvent être facilement enchainées, réparties 
 
 Dans une étape, si plusieurs transformations sont de type Narrow, elles peuvent être misent dans un pipeline. C'est-à-dire, être enchainées par Spark sans mouvements de données. Par exemple, l'application d'un filtre, puis d'une Union entre deux tables. Lors d'un pipeline, Spark est capable d'identifier les dépendances (partitions) d'un tableau, et donc d'enchaîner les étapes dès que les résultats sont disponibles, sans attendre l'ensemble des résultats pour toutes les partitions.
 
-\[Image d'instructions ayant fait l'objet d'un pipeline]
-
 Des opérations qui font l'objet d'un pipeline sont donc moins couteuses à exécuter. Cela se matérialise dans le DAG par l'enchainement de ces étapes en un seul bloc.
 
 ### La concurrence des étapes
