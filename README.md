@@ -16,12 +16,6 @@ layout:
 
 <figure><picture><source srcset=".gitbook/assets/Logo_casd_et_symbole_blanc.png" media="(prefers-color-scheme: dark)"><img src=".gitbook/assets/Logo_casd_et_symbole_noir.png" alt="" width="375"></picture><figcaption></figcaption></figure>
 
-Vous êtes habilité ou en cours d’habilitation pour travailler sur des données confidentielles auxquelles vous accéderez depuis le Centre d’Accès Sécurisé aux Données (CASD). Vous souhaitez travailler sur ces données avec des outils de dernière génération et optimiser les performances de votre environnement de travail sécurisé. Ce guide présente des conseils pour la réalisation de vos projets faisant intervenir des outils modernes dans un contexte de haute sécurité.
-
-D'abord, nous verrons comment préparer l'environnement de travail afin de l'utiliser dans les meilleures conditions. Vous aurez ainsi un environnement aussi proche que possible de celui dont vous bénéficiez sans les contraintes de sécurité.
-
-Ensuite, vous trouverez des ressources pour apprendre comment réagir face à des lenteurs d'exécution, comment identifier l'élément qui provoque une saturation et apporter des réponses adaptées en optimisant votre code ou le stockage de vos données. Vous pourrez ainsi optimiser vos processus, et en faire plus avec les mêmes ressources.
-
 ## Comment fonctionne cette documentation ?
 
 Pour simplifier la recherche des articles, des pictogrammes permettent de repérer facilement le type d'article à l'intérieur d'une section :&#x20;
@@ -33,6 +27,12 @@ Pour simplifier la recherche des articles, des pictogrammes permettent de repér
 :snake:    Ce serpent permet de repérer les articles qui présentent la pratique de **Python** au CASD.
 
 D'autres articles non spécifiques à ces langages sont présents, leur contenu est applicable quel que soit votre choix de langage !
+
+## Où est la table des matières ?
+
+Il existe des [parcours thématiques](bienvenue/tables-des-matieres-thematiques.md) selon votre pratique : Python, R ou Spark, qui listent les articles les plus pertinents. Ce chemin est recommandé pour les débutants.
+
+Il existe une [table des matières générale](bienvenue/table-des-matieres-generale.md) avec les descriptions des chapitres pour vous diriger
 
 ## Besoin d'aide supplémentaire ?
 
