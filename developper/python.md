@@ -44,7 +44,7 @@ Une fois que les choix technologiques ont été définis par rapport à notre ob
 
 #### La documentation
 
-Lorsque vous produisez le code, il est important de le documenter afin de répondre au troisième objectif. Il est important de comprendre pourquoi et pour qui on documente, car ce n'est pas une fin en soi. Documenter une fonction, c'est décrire le 'Quoi'. Cela sert avant tout aux utilisateurs de votre code ainsi qu'aux développeurs. Le but n'est pas de décrire comment est construite la fonction, mais ce qu'elle fait (Quels sont ses paramètres ? Que produit-elle comme résultat ?), afin d'assurer une utilisation simple.&#x20;
+Lorsque vous produisez le code, il est important de le documenter afin de répondre au troisième objectif. Il est important de comprendre pourquoi et pour qui on documente, car ce n'est pas une fin en soi. Documenter une fonction, c'est décrire le 'Quoi'. Cela sert avant tout à celles et ceux qui vont utiliser votre code ainsi qu'aux développeurs et développeuses. Le but n'est pas de décrire comment est construite la fonction, mais ce qu'elle fait (Quels sont ses paramètres ? Que produit-elle comme résultat ?), afin d'assurer une utilisation simple.&#x20;
 
 La documentation, c'est le manuel d'utilisation de la fonction. Prenons une métaphore : le manuel et l'aide de votre téléphone mobile vous expliquent comment le démarrer, le charger, l'utiliser pour envoyer des messages, etc. Cependant, elles ne vous décrivent pas comment le fabricant construit un écran, assemble la batterie et quelle couche logicielle est utilisée pour envoyer un message. La documentation de votre code doit suivre la même logique. Elle n'est pas là pour expliquer comment la fonction est codée, mais ce qu'elle fait et comment on peut s'en servir.&#x20;
 
@@ -71,13 +71,13 @@ La façon de faire l'intérieur de la documentation est libre, il existe plusieu
 * Le style Numpy/SciPy
 * Le style Epytext
 
-L'exemple que j'ai fourni ci-dessus est dans le style reStructured, mais j'utilise personnellement le style Google, qui est le plus parlant pour moi. Le plus important est la consistance de la documentation dans le code.
+L'exemple que j'ai fourni ci-dessus est dans le style reStructured, mais j'utilise personnellement le style Google, qui est le plus parlant pour moi. Le plus important est la consistance de la documentation dans le code. Le style est un choix personnel, il importe peu pour les utilisateurs.
 
 Pour aller plus loin sur ce sujet, [l'article de realPython](https://realpython.com/documenting-python-code/#docstring-formats) sur le sujet est très complet et présente les 4 styles possibles.
 
 #### Les commentaires et la lisibilité
 
-La documentation ne doit pas être confondue avec les commentaires et la lisibilité. La capacité d'un autre développeur à comprendre votre code est aussi importante, mais ce n'est pas le rôle de la documentation : c'est le rôle du code et de ses commentaires. C'est pour cela qu'on décrit également le 'Comment' dans les commentaires si c'est nécessaire. C'est ce qui permet à un autre développeur de modifier votre code et d'assurer sa maintenabilité, y compris par vous-même d'ailleurs. Cela peut être fait à l'aide des commentaires dans le code. Cela doit s'accompagner de façon impérative d'un code lisible (nom de variables parlants, conditions claires). Il faut trouver le compromis entre trop de commentaires, et un code sans commentaire qui est illisible.
+La documentation ne doit pas être confondue avec les commentaires et la lisibilité. La capacité d'une autre personne à comprendre votre code est aussi importante, mais ce n'est pas le rôle de la documentation : c'est le rôle du code et de ses commentaires. C'est pour cela qu'on décrit également le 'Comment' dans les commentaires si c'est nécessaire. C'est ce qui permet à chacun de modifier votre code et d'assurer sa maintenabilité, y compris par vous-même d'ailleurs. Cela peut être fait à l'aide des commentaires dans le code. Cela doit s'accompagner de façon impérative d'un code lisible (nom de variables parlants, conditions claires). Il faut trouver le compromis entre trop de commentaires, et un code sans commentaire qui est illisible.
 
 En règle générale, si le traitement que vous êtes en train d'effectuer est logique et simple, il se passe de commentaires, car en lisant les variables, on peut comprendre aisément ce qui est fait. Il faut commenter les passages les plus techniques. Si vous ressentez le besoin de commenter le code systématiquement parce qu'il n'est pas assez limpide, le problème vient d'abord du code et il faut envisager de le modifier en premier. Si aucune solution ne peut être trouvée pour le simplifier et rendre le code lisible, il faut effectivement utiliser les commentaires de manière plus détaillée.
 
@@ -128,9 +128,9 @@ En Python, il existe globalement deux paradigmes de tests :&#x20;
 * Pytest
 * Unittest
 
-Unittest est la librairie officielle de test de Python. Cependant, elle est de plus en plus délaissée au profit de Pytest (pour des raisons de simplicité, de fonctionnalité offertes ...). La dynamique est historique va vers l'utilisation de Pytest, car la communauté y est plus active et que la syntaxe et la compréhension est plus simple.
+Unittest est la librairie officielle de test de Python. Cependant, elle est de plus en plus délaissée au profit de Pytest (pour des raisons de simplicité, de fonctionnalité offertes ...). La dynamique historique va vers l'utilisation de Pytest, car la communauté y est plus active et que la syntaxe et la compréhension est plus simple.
 
-C'est personnellement le framework que j'utilise pour développer mes programmes, mais unittest reste fonctionnel. C'est essentiellement un choix qui revient au développeur.
+C'est personnellement le framework que j'utilise pour développer mes programmes, mais unittest reste fonctionnel. C'est essentiellement un choix qui revient à l'équipe de développement.
 
 Les tests suivent généralement la conception suivante :&#x20;
 

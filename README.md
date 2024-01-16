@@ -30,7 +30,7 @@ D'autres articles non spécifiques à ces langages sont présents, leur contenu 
 
 ## Où est la table des matières ?
 
-Il existe des [parcours thématiques](bienvenue/tables-des-matieres-thematiques.md) selon votre pratique : Python, R ou Spark, qui listent les articles les plus pertinents. Ce chemin est recommandé pour les débutants.
+Il existe des [parcours thématiques](bienvenue/tables-des-matieres-thematiques.md) selon votre pratique : Python, R ou Spark, qui listent les articles les plus pertinents. Ce chemin est recommandé pour les personnes débutantes.
 
 Il existe une [table des matières générale](bienvenue/table-des-matieres-generale.md) avec les descriptions des chapitres pour vous diriger
 

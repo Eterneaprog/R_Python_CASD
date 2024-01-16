@@ -18,15 +18,17 @@ layout:
 
 ### Installer Spark
 
-Pour simplifier l'installation de Spark, nous avons conçu un script qui effectue cette installation de façon automatisée. Il est situé dans l'espace commun. Que vous souhaitiez adresser le logiciel Spark avec une syntaxe proche de R ou de Python, cette étape est nécessaire.
+Pour simplifier l'installation de Spark, nous avons conçu un script qui effectue cette installation de façon automatisée. Il est situé dans le dossier Python du dossier Raccourcis de votre bureau. Que vous souhaitiez adresser le logiciel Spark avec une syntaxe proche de R ou de Python, cette étape est nécessaire.
 
 Cliquez sur AutoInstallSpark.bat afin d'effectuer l'installation.
 
-**Attention :** Vous devez attendre la fin du script et qu'il demande d'appuyer sur entrée pour terminer. Il ne faut pas fermer la fenêtre du terminal ouvert pendant le script, cette opération n'est pas très longue.
+Vous devrez d'abord choisir une version de Spark parmi la liste de celle disponible en saisissant son numéro. Je vous conseille la plus récente.&#x20;
+
+**Attention :** Vous devez attendre la fin du script et qu'il demande d'appuyer sur entrée pour terminer. Il ne faut pas fermer la fenêtre du terminal ouvert pendant le script, cette opération n'est pas très longue. Il suffit d'attendre la copie de l'ensemble des fichiers.
 
 Ce script décompresse l'archive contenant Spark, copie les fichiers nécessaires à son utilisation sous Windows, et paramètres les variables d'environnement.
 
-Vous pouvez tester l'installation avec la commande suivante dans un terminal de commande (cmd) :
+Vous pouvez tester l'installation avec la commande suivante dans un environnement anaconda par exemple (Miniconda Prompt) :
 
 ```bash
 spark-shell
@@ -53,15 +55,23 @@ Vous possédez un serveur Spark adressable avec R pour votre application !
 
 ### Installer PySpark et adresser le cluster avec un Notebook Jupyter
 
-PySpark est inclus nativement avec Spark. Une fois l'installation de Spark effectuée avec le script fourni, vous pouvez accéder à Pyspark dans votre application avec la commande :
+PySpark peut être appelé dans un environnement anaconda :&#x20;
+
+```
+conda activate nom_environnement
+```
+
+Attention : il est nécessaire de posséder un environnement anaconda dans une version compatible avec la version de Spark installée. Par exemple, pour Spark 3.3.2, Python 3.9 est adapté, mais pas 3.11. Saisissez ensuite :
 
 ```bash
 pyspark
 ```
 
+Vous pouvez alors tester votre installation !
+
 ### Installer les autres dépendances de Spark
 
 Les fichiers Jar additionnels dont vous pouvez avoir besoin pour installer des librairies Spark peuvent être obtenus dans le même dossier que pour l'installation de SparklyR : dans S:\Spark\jar\_files. Vous trouverez ici les binaires à copier, par exemple, celui qui permet d'ouvrir un fichier SAS avec Spark : spark-sas7bdat, dans différentes versions. De même, vous pourrez installer parso avec la manœuvre qui suit :
 
-* Copiez le Jar de votre choix dans le dossier : "C:\Users\projet\_0\_p\_nom0000\AppData\Local\spark\spark-3.3.2-bin-hadoop2\jars"
+* Copiez le Jar de votre choix dans le dossier : "C:\Users\projet\_0\_p\_nom0000\AppData\Local\spark\spark-X.X.X-bin-hadoopX\jars"
 

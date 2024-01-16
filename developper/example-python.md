@@ -1,6 +1,6 @@
 # 🐍 Un exemple d'application Python
 
-En règle générale, on cherche à maintenir le fichier principal d'une application python aussi succinct que possible. Un exemple de code permettant de renvoyer la tranche d'âge associée à un utilisateur pourrait être :
+En règle générale, on cherche à maintenir le fichier principal d'une application python aussi succinct que possible. Un exemple de code permettant de renvoyer la tranche d'âge associée à une personne pourrait être :
 
 **functions:**
 

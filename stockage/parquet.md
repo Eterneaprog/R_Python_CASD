@@ -2,7 +2,7 @@
 
 ## Qu'est-ce que le parquet ?
 
-Le parquet est un format de stockage de données en colonnes, optimisé pour la lecture. Il utilise par défaut une compression snappy, qui tient compte du contenu afin de maximiser le gain de place. Cette compression est cependant transparente pour les utilisateurs.
+Le parquet est un format de stockage de données en colonnes, optimisé pour la lecture. Il utilise par défaut une compression snappy, qui tient compte du contenu afin de maximiser le gain de place. Cette compression est cependant transparente à l'utilisation.
 
 ### Les avantages de ce format par rapport aux autres (CSV / SAS7BDAT / Excel)
 

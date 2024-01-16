@@ -23,7 +23,7 @@
   * [📊 Un exemple d'application R](developper/example-r.md)
 * [🤝 Travail collaboratif](collaborer/README.md)
   * [❤ Git](collaborer/git.md)
-  * [💾 Stockage accessible à vos collaborateurs](collaborer/stockage-commun.md)
+  * [💾 Stockage accessible aux membres d'un projet](collaborer/stockage-commun.md)
   * [🌐 Communiquer dans la bulle](collaborer/etherpad.md)
 * [↗ Optimiser les performances de calcul](performance-calculs/README.md)
   * [👩🏫 Notions autour des ressources](performance-calculs/ressources.md)

@@ -18,13 +18,13 @@ layout:
 >
 > C'est un espace dans lequel se trouve une version de l'interpréteur python (3.8, 3.9, ...) ainsi qu'un certain nombre de librairies Python, compatibles dans une certaine version (Numpy, Pandas, Matplotlib ...)
 
-Conda est un outil très puissant : il permet de créer et gérer vos environnements Python pour chacune de vos applications. Ainsi, pas de mélange entre les dépendances et les versions entre vos différents projets (c’est ce que l’on appelle un conflit). Vous aurez également la possibilité d’exécuter votre code sur différentes machines avec beaucoup plus de simplicités (les environnements sont dits ‘reproductibles’). Cette section présente les rudiments de la gestion d’un environnement conda, mais vous trouverez dans les fiches suivantes les bonnes pratiques concernant les dépendances, qui apportent la véritable valeur ajoutée de l’outil conda.
+Conda est un outil très puissant : il permet de créer et gérer vos environnements Python pour chacune de vos applications. Ainsi, pas de mélange entre les dépendances et les versions entre vos différents projets (c’est ce que l’on appelle un conflit). Vous aurez également la possibilité d’exécuter votre code sur différentes machines avec beaucoup plus de simplicités (les environnements sont dits ‘reproductibles’). Cette section présente les rudiments de la gestion d’un environnement conda, mais vous trouverez sur les fiches suivantes les bonnes pratiques concernant les dépendances, qui apportent la véritable valeur ajoutée de l’outil conda.
 
 ## Création
 
-D’abord nous allons créer un environnement nommé projet\_1 pour votre projet, en version 3.9 dans cet exemple. Il est recommandé de créer un environnement par projet, afin que chaque environnement soit isolé, il n’y aura ainsi pas de conflits:
+D’abord, nous allons créer un environnement nommé projet\_1 pour votre projet, en version 3.9 dans cet exemple. Il est recommandé de créer un environnement par projet, afin que chaque environnement soit isolé, il n’y aura ainsi pas de conflits :
 
-Ouvrez le dossier raccourcis présents sur le bureau de votre SD-Box une fois connecté à votre session. Vous y trouverez un raccourci vers Minconda Prompt. Il s'agit tout simplement d'un terminal de commande où Anaconda est accessible:
+Ouvrez le dossier raccourcis présents sur le bureau de votre SD-Box une fois connecté à votre session. Vous y trouverez un raccourci vers Miniconda Prompt. Il s'agit tout simplement d'un terminal de commande où Anaconda est accessible :
 
 ```bash
 conda create --name projet_1 python --offline
