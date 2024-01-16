@@ -19,6 +19,7 @@
   * [👩🏫 Bonnes pratiques de code Python](developper/python.md)
   * [👩🏫 Bonnes pratiques de code R](developper/r.md)
   * [🐍 Un exemple d'application Python](developper/example-python.md)
+  * [📊 Charger des données avec R](developper/charger-des-donnees-avec-r.md)
   * [📊 Un exemple d'application R](developper/example-r.md)
 * [🤝 Travail collaboratif](collaborer/README.md)
   * [❤ Git](collaborer/git.md)

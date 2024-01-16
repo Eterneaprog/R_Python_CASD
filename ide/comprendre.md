@@ -9,3 +9,5 @@ Vous pouvez maintenant découvrir plusieurs éditeurs disponibles au CASD et app
 * [RStudio](rstudio.md) pour les projets avec le langage R
 * [VSCode](vscode.md) pour les projets qui utilisent d'autre langage (en particulier Python)
 * [JupyterLab](jupyterlab.md) pour l'exploration de données (en R/Python/Spark ...)
+* [Jupyter Notebook](broken-reference), un éditeur très proche de jupyterlab, mais simplifié !
+
