@@ -12,7 +12,7 @@ On va donc stocker nos objets métiers directement dans la base de données de l
 
 Utiliser un ORM facilite considérablement la gestion des données associées à une application Python. En effet, pas besoin d'écrire de longues requêtes SQL pour stocker ou récupérer des données dans la base : la librairie qui réalise l'ORM permet, lorsqu'on lui transmet un objet, de l'écrire de façon automatisée dans la base, et inversement.&#x20;
 
-Pour la partie de la gestion des données qui concerne [les opérations CRUD](bases.md) (écriture, lecture, modification et suppression),  elles sont directement implémentées pour chaque objet !
+Pour la partie de la gestion des données qui concerne [les opérations CRUD](bases.md#notion-des-operations-crud) (écriture, lecture, modification et suppression),  elles sont directement implémentées pour chaque objet !
 
 De même, lorsque l'on effectue des jointures, la librairie sait automatiquement joindre deux objets qui possèdent une clé en commun, car les clés sont définies dans le modèle de relationnel. \
 \

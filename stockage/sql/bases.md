@@ -1,6 +1,6 @@
 # 👩🏫 Les bases SQL
 
-## Un rappel sur les bases SQL
+## Un rappel théorique
 
 Une base de données SQL est un système qui permet de stocker des données organisées en tables, connectées les unes aux autres par des clés. L'intérêt principal est d'éviter de dupliquer des informations qui se retrouveraient de façon multiples dans une seule table. Cela permet aussi de représenter de manière fidèle ce qui se passe dans un processus métier. \
 \
@@ -14,12 +14,23 @@ Ensuite, un/une propriétaire peut posséder 0, 1 ou plusieurs voitures. C'est c
 
 Enfin, un véhicule possède une marque. Mais une marque peut être associée à plusieurs voitures.&#x20;
 
-### Pour aller plus loin sur la construction d'une base de données SQL :&#x20;
+### Construction d'une base de données SQL&#x20;
 
 * Les [formes normales](https://fr.wikipedia.org/wiki/Forme\_normale\_\(bases\_de\_donn%C3%A9es\_relationnelles\)) qui doivent être respectées lorsque vous créez votre base
 * Le site [dbdiagram.io](https://dbdiagram.io/) qui vous permet de réaliser vos propres schémas, et les exporter vers [MySQL](bases-disponibles.md#mysql)
 
-## La syntaxe SQL pour effectuer des requêtes
+## Notion des opérations CRUD
+
+CRUD signifie en anglais :&#x20;
+
+* Create : les opérations d'écritures de données
+* Read : les opérations de lecture dans la base
+* Update : la mise à jour d'une information dans la base
+* Delete : la suppression de données de la base
+
+Ce sont les quatre opérations fondamentales associées à une base de données. Dans la suite de cette fiche, nous verrons comment SQL met en place ces opérations et comment les réaliser.
+
+## Effectuer des requêtes (Read)
 
 Une requête SQL pour obtenir des données sur une table commence par les instructions SELECT et FROM :
 
@@ -57,12 +68,12 @@ Enfin, j'applique le filtre sur le nom de la marque dans la table correspondante
 
 Avec ces instructions, vous pouvez effectuer la plupart des requêtes classiques.&#x20;
 
-### Pour aller plus loin sur les requêtes de données avec SQL :&#x20;
+### Aller plus loin
 
 * Les [fonctions d'agrégats](https://sql.sh/fonctions/agregation) avec les groupements permettent de faire des calculs évolués
 * Le site [sql.sh](https://sql.sh/) de manière générale qui propose des cours plus détaillés sur la syntaxe SQL
 
-## Créer des tables et insérer des données
+## Créer des tables et insérer des données (Create)
 
 Si vous souhaitez mettre en place votre propre base, vous pouvez d'abord [choisir une base de données](bases-disponibles.md), la créer et utiliser les instructions qui vont suivre pour créer vos tables.
 
@@ -88,6 +99,27 @@ VALUES (1, 1, 5);
 
 Ici, je ne connais pas la date d'expiration d'assurance ni la valeur de la vignette crit'air, je ne les ai donc pas remplis. Comme ces arguments ne sont pas en NOT NULL dans la table Voiture, cela ne pose pas de problèmes. De plus, l'identifiant dans la table est auto-incrémenté, je ne le saisis donc pas à la création d'une nouvelle ligne. J'ai ici simplement indiqué l'identifiant du propriétaire, le fait que la voiture était assurée, et qu'elle possédait 5 places.
 
-### Pour aller plus loin sur la création d'une base de données SQL :&#x20;
+### Aller plus loin&#x20;
 
 * Le [cours de la W3Schools](https://www.w3schools.com/sql/sql\_datatypes.asp) sur les types supportés en SQL
+
+## Mettre à jour les données (Update)
+
+Admettons que je possède à présent la valeur de la vignette critair, inutile de créer une nouvelle entité pour le véhicule. Je peux ajouter de façon simple cette information :
+
+```sql
+UPDATE Voiture
+SET critair = '1'
+WHERE id = 1
+```
+
+Je choisis la table dans laquelle modifier l'information. Puis l'information à modifier avec SET, enfin quelles lignes doivent bénéficier de la modification.
+
+## Supprimer des données (Delete)
+
+```sql
+DELETE FROM Voiture
+WHERE critair = '5'
+```
+
+La suppression des voitures ayant un critair 5 peut se faire via l'instruction DELETE. Il suffit de choisir la table et le critère de suppression.
