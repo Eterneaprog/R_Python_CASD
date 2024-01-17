@@ -15,7 +15,7 @@ Elle peut être lue très facilement [en R](r.md#travailler-avec-sqlite) et [en 
 
 ## MySQL
 
-MySQL est un système de gestion de base de données mondialement connu. Depuis les années 2000, il est constamment parmi les bases les plus plébiscitées par les utilisateurs de SGBD.&#x20;
+MySQL est un système de gestion de base de données mondialement connu. Depuis les années 2000, il est constamment parmi les bases les plus plébiscitées par les personnes utilisatrices de SGBD.&#x20;
 
 Il faut la choisir si :&#x20;
 

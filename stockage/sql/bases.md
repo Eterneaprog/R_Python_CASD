@@ -8,15 +8,15 @@ Par exemple :&#x20;
 
 <figure><img src="../../.gitbook/assets/exemple_bdd.png" alt=""><figcaption><p>Voici un schéma de base de données simple</p></figcaption></figure>
 
-Sur ce schéma, on voit que j'ai d'abord représenté un premier acteur métier : le propriétaire du véhicule. J'ai mis dans sa table les informations le concernant. En particulier, chaque utilisateur (véhicule, voiture et moto d'ailleurs) possède un identifiant unique qui permet de l'identifier. C'est ce qu'on l'on appelle la clé Primaire de la table. Cela nous permettra plus tard de faire les liens entre les tables.
+Sur ce schéma, on voit que j'ai d'abord représenté un premier acteur métier : le/la propriétaire du véhicule. J'ai mis dans sa table les informations le/la concernant. En particulier, chaque propriétaire (voiture, et marque également d'ailleurs) possède un identifiant unique qui permet de l'identifier. C'est ce qu'on l'on appelle la clé Primaire de la table. Cela nous permettra plus tard de faire les liens entre les tables.
 
-Ensuite, un propriétaire peut posséder 0, 1 ou plusieurs voitures. C'est ce qu'on l'on voit à la présence du symbole \* à droite de la liaison entre les propriétaires et les véhicules. Par contre,  on sait qu'un véhicule n'est associé qu'à un seul propriétaire à la présence du 1 à gauche de la liaison entre ces deux tables.
+Ensuite, un/une propriétaire peut posséder 0, 1 ou plusieurs voitures. C'est ce qu'on l'on voit à la présence du symbole \* à droite de la liaison entre les propriétaires et les véhicules. Par contre,  on sait qu'un véhicule n'est associé qu'à un/une seul.e propriétaire à la présence du 1 à gauche de la liaison entre ces deux tables.
 
 Enfin, un véhicule possède une marque. Mais une marque peut être associée à plusieurs voitures.&#x20;
 
 ### Pour aller plus loin sur la construction d'une base de données SQL :&#x20;
 
-* Les formes normales qui doivent être respectées lorsque vous créez votre base
+* Les [formes normales](https://fr.wikipedia.org/wiki/Forme\_normale\_\(bases\_de\_donn%C3%A9es\_relationnelles\)) qui doivent être respectées lorsque vous créez votre base
 * Le site [dbdiagram.io](https://dbdiagram.io/) qui vous permet de réaliser vos propres schémas, et les exporter vers [MySQL](bases-disponibles.md#mysql)
 
 ## La syntaxe SQL pour effectuer des requêtes
@@ -59,8 +59,8 @@ Avec ces instructions, vous pouvez effectuer la plupart des requêtes classiques
 
 ### Pour aller plus loin sur les requêtes de données avec SQL :&#x20;
 
-* Les fonctions d'agrégats avec les groupements permettent de faire des calculs évolués
-* Le site [sql.sh](https://sql.sh/) qui propose des cours plus détaillés sur la syntaxe SQL
+* Les [fonctions d'agrégats](https://sql.sh/fonctions/agregation) avec les groupements permettent de faire des calculs évolués
+* Le site [sql.sh](https://sql.sh/) de manière générale qui propose des cours plus détaillés sur la syntaxe SQL
 
 ## Créer des tables et insérer des données
 

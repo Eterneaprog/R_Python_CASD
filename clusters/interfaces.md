@@ -2,7 +2,7 @@
 
 ## Spark UI
 
-L'interface Spark UI vous permet d'observer les ressources consommées, les tâches en cours d'exécution, les utilisateurs connectés, etc. Cette interface est très pratique puisqu'elle permet de savoir avant de lancer une tâche quelles sont les ressources disponibles. Deux onglets nous intéressent particulièrement.
+L'interface Spark UI vous permet d'observer les ressources consommées, les tâches en cours d'exécution, les personnes connectées, etc. Cette interface est très pratique puisqu'elle permet de savoir avant de lancer une tâche quelles sont les ressources disponibles. Deux onglets nous intéressent particulièrement.
 
 La page jobs, qui contient les tâches qui tournent actuellement :&#x20;
 

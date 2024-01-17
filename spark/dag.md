@@ -2,7 +2,7 @@
 
 **Attention :** cet article présente des notions avancées en Spark. Ces notions ne sont pas nécessaires pour faire fonctionner le logiciel : il est tout à fait possible de faire du Spark sans elles. Il s'agit d'optimisations pour les personnes qui effectuent du Spark en production, et pour qui le temps d'exécution d'un programme doit être diminué. \
 \
-Cet article n'est pas recommandé pour les débutants en Spark, même s'il peut être lu par tous.
+Cet article n'est pas recommandé pour celles et ceux débutants en Spark, même s'il peut être lu par tous.
 
 ## Qu'est-ce qu'un plan d'exécution Spark ?
 
