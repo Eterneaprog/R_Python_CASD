@@ -24,7 +24,7 @@ Conda est un outil très puissant : il permet de créer et gérer vos environne
 
 D’abord, nous allons créer un environnement nommé projet\_1 pour votre projet, en version 3.9 dans cet exemple. Il est recommandé de créer un environnement par projet, afin que chaque environnement soit isolé, il n’y aura ainsi pas de conflits :
 
-Ouvrez le dossier raccourcis présents sur le bureau de votre SD-Box une fois connecté à votre session. Vous y trouverez un raccourci vers Miniconda Prompt. Il s'agit tout simplement d'un terminal de commande où Anaconda est accessible :
+Dans le dossier Raccourcis situé sur votre bureau, se trouve un dossier "Python". Vous y trouverez un raccourci vers plusieurs Miniconda Prompt. Sélectionner le Miniconda Prompt correspondant à la version de Python sur laquelle vous voulez créer votre enbironnement conda de travail.  Il s'agit tout simplement d'un terminal de commande où Anaconda est accessible :
 
 ```bash
 conda create --name projet_1 python --offline
