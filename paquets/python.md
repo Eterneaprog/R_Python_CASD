@@ -4,7 +4,7 @@
 
 En python, le gestionnaire de paquets à utiliser au CASD est pip car c’est un serveur PYPI qui est synchronisé. Le CASD vous met à disposition un script qui permet d'assurer le lancement du serveur contenant les paquets :
 
-* **Lancez le script pip-install-package depuis votre dossier raccourci situé sur votre bureau**. Ne fermez pas la fenêtre obtenue tant que vos packages ne sont pas installés.
+* **Lancez le script pip-install-package depuis  le dossier "Python" situé dans le dossier "Raccourcis" situé sur votre bureau**. Ne fermez pas la fenêtre obtenue tant que vos packages ne sont pas installés.
 
 <figure><img src="../.gitbook/assets/Install-package.PNG" alt=""><figcaption><p>Le script d'installation de paquets disponible dans le dossier Python devrait ressembler à ceci. Il faut le laisser ouvert pendant la manipulation !</p></figcaption></figure>
 
