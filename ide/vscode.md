@@ -27,5 +27,15 @@ Deux extensions sont obligatoires : ms-python.python et ms-tollsai.jupyter.
 
 Une fois les extensions installées, pour utiliser votre environnement conda, appuyer sur "Ctrl+Shift+P" puis sélectionner "Python : select interpreter" et choisissez votre environnement.
 
+Il est possible d'ouvrir des notebooks jupyter depuis VSCode ou d’exécuter les programmes dans une fenêtre interactive.&#x20;
+
+Si vous préférez lancer vos programmes dans un Terminal :
+
+* Utiliser « Ctrl+Shift+P » puis chercher « Terminal : Select Default Profile »&#x20;
+* Choisir « Command Prompt »&#x20;
+* &#x20;Tuer les terminaux éventuellement ouverts avec l’icône corbeille
+
+
+
 
 
