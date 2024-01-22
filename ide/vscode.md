@@ -23,7 +23,9 @@ Vous pouvez installer de nombreuses extensions VSCode dans la bulle. Pour cela, 
 * Dans les ... de ce menu, cliquez sur 'installer depuis VSIX'.
 * Choissisez un fichier VSIX correspond à l'extension que vous souhaitez installer dans le dossier S:\VsCode
 
-Deux extensions sont particulièrement recommandées : ms-python.python et ms-tollsai.jupyter.
+Deux extensions sont obligatoires : ms-python.python et ms-tollsai.jupyter.
 
-> _J'ai créé un environnement conda, mais je ne le retrouve pas dans VSCode. Que faire ?_\
-> Pour utiliser VSCode avec votre environnement, il faut avoir installé les extensions liées à Python comme expliqué ci-dessus. Ensuite, utilisez ctrl + maj + p afin de séléctionner l'environnement Python ainsi créé et l'ajouter à VSCode.
+Une fois les extensions installées, pour utiliser votre environnement conda, appuyer sur "Ctrl+Shift+P" puis sélectionner "Python : select interpreter" et choisissez votre environnement.
+
+
+
