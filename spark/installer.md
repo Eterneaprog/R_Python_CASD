@@ -55,19 +55,28 @@ Vous possédez un serveur Spark adressable avec R pour votre application !
 
 ### Installer PySpark et adresser le cluster avec un Notebook Jupyter
 
-PySpark peut être appelé dans un environnement anaconda :&#x20;
+PySpark peut être appelé  en choisissant un kernel adapté pour exécuter votre notebook. Pour cela :&#x20;
 
-```
-conda activate nom_environnement
-```
+Ouvrez un miniconda prompt dans la version de votre choix.&#x20;
 
-Attention : il est nécessaire de posséder un environnement anaconda dans une version compatible avec la version de Spark installée. Par exemple, pour Spark 3.3.2, Python 3.9 est adapté, mais pas 3.11. Saisissez ensuite :
+Attention : il est nécessaire de posséder un environnement anaconda dans une version compatible avec la version de Spark installée. Par exemple, **pour Spark 3.3.2, Python 3.9 est adapté, mais pas 3.11.**&#x20;
 
-```bash
-pyspark
+```python
+conda create --name nom_env python --offline
 ```
 
-Vous pouvez alors tester votre installation !
+Lancez et gardez ouvert le script pip-install-package et saissisez, dans votre miniconda prompt :
+
+```python
+pip install pyspark==3.3.2
+pip install ipykernel --user
+```
+
+La version de votre paquet python Pyspark doit être identique à la version de Spark installée sur votre espace ! Puisqu'il s'agit d'un nouvel environnement dédié aux notebook, ipykernel est également nécéssaire.
+
+Vous pouvez maintenant choisir le kernel adapté dans Visual Studio Code.&#x20;
+
+Le notebook devrait s'exécuter normalement !
 
 ### Installer les autres dépendances de Spark
 
