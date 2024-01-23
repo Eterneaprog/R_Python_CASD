@@ -40,4 +40,24 @@ Rendez-vous désormais avec votre explorateur de fichiers dans votre espace pers
 git clone C:/Users/Public/Documents/nom_du_dossier_à_cloner/
 ```
 
-Vous pouvez à présent éditer votre dépôt, et envoyer vos modifications comme vous le feriez hors de la bulle !
+Vous pouvez à présent éditer votre dépôt, et envoyer vos modifications comme vous le feriez hors de la bulle.
+
+### Ajouter des fichiers au dépot
+
+Créez un fichier supplémentaire dans le dossier contenant votre version du dépot Git.
+
+Effectuez de nouveau clic droit, git Bash Here dans ce dossier. Saisissez alors :&#x20;
+
+```git
+git add nouveau_fichier.txt
+git commit -m "message de votre commit"
+git push
+```
+
+### Récupérer les modifications d'un autre utilisateur
+
+Effectuez clic droit, git Bash Here dans votre dossier contenant le code (votre version du dépôt git). Saisissez :&#x20;
+
+```
+git pull
+```
