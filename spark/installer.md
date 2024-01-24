@@ -74,9 +74,17 @@ pip install ipykernel --user
 
 La version de votre paquet python Pyspark doit être identique à la version de Spark installée sur votre espace ! Puisqu'il s'agit d'un nouvel environnement dédié aux notebook, ipykernel est également nécéssaire.
 
-Vous pouvez maintenant choisir le kernel adapté dans Visual Studio Code.&#x20;
+Vous pouvez maintenant choisir le kernel adapté dans Visual Studio Code. Attention à choisir le bon kernel, et que l'environnement en question possède le package ipykernel qui permet d'exécuter des notebooks.
 
-Le notebook devrait s'exécuter normalement !
+En cas d'erreur avec py4j, vous pouvez ajouter deux cellules en entrée de script (avant la création de l'environnement Spark !) :&#x20;
+
+```python
+import os 
+import sys
+
+os.environ['PYTHON_SPARK'] = sys.executable
+os.environ['PYTHON_DRIVER_SPARK'] = sys.executable
+```
 
 ### Installer les autres dépendances de Spark
 
