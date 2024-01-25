@@ -14,7 +14,11 @@ layout:
 
 # 🎉 Bienvenue !
 
+<div data-full-width="true">
+
 <figure><picture><source srcset=".gitbook/assets/Logo_casd_et_symbole_blanc.png" media="(prefers-color-scheme: dark)"><img src=".gitbook/assets/Logo_casd_et_symbole_noir.png" alt="" width="375"></picture><figcaption></figcaption></figure>
+
+</div>
 
 ## Comment fonctionne cette documentation ?
 
@@ -36,7 +40,7 @@ Il existe une [table des matières générale](bienvenue/table-des-matieres-gene
 
 ## Besoin d'aide supplémentaire ?
 
-En cas de problèmes, questions sur ce guide, idées pour l’améliorer, n’hésitez pas à nous contacter à [datascience@casd.eu](mailto:datascience@casd.eu). Je serais ravi d’échanger avec vous pour l'améliorer !
+En cas de problèmes, questions sur ce guide, idées pour l’améliorer, n’hésitez pas à nous contacter à [datascience@casd.eu](mailto:datascience@casd.eu). Nous serons ravis d’échanger avec vous des sujets data !
 
 Au nom de l'équipe informatique : \
 Bon code !&#x20;
