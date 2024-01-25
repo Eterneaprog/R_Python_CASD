@@ -9,7 +9,7 @@ Il est également possible [d'éditer vos notebooks depuis VSCode](vscode.md#les
 * Utiliser le raccourci « pip-install-packages » situé dans le dossier Raccourcis situé sur votre bureau et conserver le terminal ouvert pour la durée de l'opération
 * Utiliser le raccourci « Miniconda prompt » situé dans le dossier Raccourcis situé sur votre bureau.
 * Saisir la commande `conda activate nomenvironnement` pour activer l'environnement de votre choix
-* Saisir la commande `pip install jupyter` afin d'installer le paquet Jupyter
+* Saisir la commande `pip install jupyter=5.7.5` afin d'installer le paquet Jupyter
 * Saisir la commande `python -m ipykernel install --user`
 
 Votre installation de Jupyter est effectuée pour votre session. Il n'y a pas besoin d'effectuer cette installation de nouveau. Il faut juste être attentif à l'environnement conda que vous avez choisi pour effectuer cette installation.
