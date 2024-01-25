@@ -2,7 +2,7 @@
 
 Jupyter est une série d'outils qui permet de tester toute sorte de code. Ils sont particulièrement efficaces dans l'exploration des données. Jupyter Lab est tout à fait adapté pour effectuer des calculs avec Spark, Python ou même R. Ce n'est pas tout à fait un éditeur au sens de VSCode ou RStudio, car il ne propose pas les mêmes fonctions pour le développement. Cependant, c'est un outil très performant.
 
-Il est également possible [d'éditer vos notebooks depuis VSCode](vscode.md#les-extensions). Pour cela, il faut installer l'extension adaptée.
+Il est également possible [d'éditer vos notebooks depuis VSCode](vscode.md#ouvrir-un-notebook-jupyter). Cette solution est actuellement recommandée par rapport à Jupyter pour des raisons de stabilité et de facilité d'utilisation. La procédure d'installation de Jupyter décrite ci-dessous est cependant fonctionnelle et permet d'utiliser Jupyter. Elle doit être suivie de façon précise, sinon, Jupyter peut ne pas fonctionner.
 
 ## Installation de Jupyter
 
