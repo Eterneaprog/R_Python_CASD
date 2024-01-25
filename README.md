@@ -36,7 +36,7 @@ Il existe une [table des matières générale](bienvenue/table-des-matieres-gene
 
 ## Besoin d'aide supplémentaire ?
 
-En cas de problèmes, questions sur ce guide, idées pour l’améliorer, n’hésitez pas à me contacter à [titouan.rigaud@casd.eu](mailto:titouan.rigaud@casd.eu). Je serais ravi d’échanger avec vous pour l'améliorer !
+En cas de problèmes, questions sur ce guide, idées pour l’améliorer, n’hésitez pas à nous contacter à [datascience@casd.eu](mailto:datascience@casd.eu). Je serais ravi d’échanger avec vous pour l'améliorer !
 
 Au nom de l'équipe informatique : \
 Bon code !&#x20;
