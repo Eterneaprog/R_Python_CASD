@@ -29,3 +29,11 @@ Il existe des outils pour chaque cas d'usage :&#x20;
 * Pour lire du parquet et l'afficher, vous pouvez utiliser [TADviewer](https://www.tadviewer.com/) ou [ParquetViewer](https://github.com/mukunku/ParquetViewer)
 * Pour l'interroger et l'utiliser comme une base de données en lecture : [DuckDB](duckdb/) est un très bon candidat (très efficace avec R et Python).
 * Pour le créer et interagir avec de façon directe : [Arrow ](https://arrow.apache.org/docs/python/parquet.html)est une librairie efficace qui permet presque de tout faire avec parquet en Python ou R.
+
+## Partitionnement ou non ?
+
+Un fichier parquet peut être partitionné. Cela se reconnait au fait que le fichier parquet est dans ce cas un dossier qui contient plusieurs fichiers parquets de petite taille. Cela signifie qu'il est découpé afin de pouvoir le requêter de manière plus efficace.
+
+On peut le partitionner par colonne par exemple : si je possède un fichier contenant des véhicules, je peux le partitionner par marque. Ainsi, si je ne travaille que sur les véhicules d'une certaine marque, je n'utiliserai que ce fichier parquet et le traitement sera donc très rapide.
+
+Le partitionnement peut donc être une solution intelligente s'il est effectué de sorte à avoir du sens par rapport aux futurs traitements métiers. L'objectif est partitionnant les données est de les regrouper de telle sorte que les traitements soient appliqués sur un minimum de fichier, et ainsi gagner du temps de traitement.&#x20;
