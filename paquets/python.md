@@ -8,7 +8,7 @@ En python, le gestionnaire de paquets à utiliser au CASD est pip car c’est un
 
 <figure><img src="../.gitbook/assets/Install-package.PNG" alt=""><figcaption><p>Le script d'installation de paquets disponible dans le dossier Python devrait ressembler à ceci. Il faut le laisser ouvert pendant la manipulation !</p></figcaption></figure>
 
-L’environnement conda de votre choix doit être créé et activé (voir chapitre 1). Il vous faudra ouvrir un Miniconda prompt depuis l'espace raccourci et utiliser la commande :
+L’environnement conda de votre choix doit être créé et activé (voir chapitre 1). Il vous faudra ouvrir un Miniconda prompt depuis l'espace raccourci :&#x20;
 
 * Dans l'anaconda prompt ouvert, saisissez :
 
@@ -16,7 +16,9 @@ L’environnement conda de votre choix doit être créé et activé (voir chapit
 conda activate nom_de_votre_environnement
 ```
 
-puis :
+Si vous avez oublié les environnements créés sur votre espace, utilisez `conda env list` pour les afficher.
+
+Puis :
 
 ```bash
 pip install nom_du_package_souhaité

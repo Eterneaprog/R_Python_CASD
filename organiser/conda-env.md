@@ -36,15 +36,25 @@ Cette commande utilise anaconda (conda) afin de créer un environnement (create)
 
 Pour choisir une version de python spécifique, il suffit d'exécuter la commande présentée ci-dessus dans le terminal ouvert par miniconda dont le nom correspond. Par exemple, pour obtenir un environnement python 3.10, il suffit d'ouvrir le miniconda prompt 3.10 et d'exécuter le conda create.
 
+## Voir les environnements créés
+
+Une fois un environnement créé, vous pouvez afficher la liste de vos environnements avec :
+
+```python
+conda env list
+```
+
+Cela permet de choisir dans quel environnement on souhaite se placer
+
 ## Activation
 
 > _A quoi sert l'activation?_
 >
 > C'est le fait de préciser avec quel environnement on souhaite travailler. Cela permet de changer de l'environnement de base vers votre environnement spécifique pour le projet.
 
-Maintenant, activons l’environnement afin de travailler dedans:
+Maintenant, activons l’environnement afin de travailler dedans :
 
-```bash
+```python
 conda activate projet_1
 ```
 
@@ -55,3 +65,13 @@ conda activate projet_1
 **Attention :** Il faudra activer votre environnement avant l’exécution de votre code python ou d’effectuer des manipulations d’installation. Certains outils, tels que des environnements de développements, automatisent cette étape, mais ce n’est pas systématique. Les environnements de développements seront présentés dans une autre fiche.
 
 Les autres commandes associées au système conda sont résumées sur [cette fiche](https://docs.conda.io/projects/conda/en/4.6.0/\_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf).
+
+## Supprimer un environnement
+
+La commande de suppression est :&#x20;
+
+```python
+conda remove --name nom_environnement --all
+```
+
+Cela permet de supprimer de façon définitive un environnement et les paquets qui lui étaient associés. On peut ainsi le recréer et recommencer en cas d'erreur par exemple.
