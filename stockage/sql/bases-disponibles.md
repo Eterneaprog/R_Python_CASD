@@ -35,3 +35,13 @@ Il faut la choisir si :
 * Vous souhaitez une base de données relationnelles open-source et évolutive
 
 Les différences entre MySQL et MariaDB sont très faibles pour la plupart des utilisateurs et les deux logiciels sont très compatibles. Par conséquent, le choix entre les deux s'effectue souvent sur les applications existantes et le niveau de connaissance dans l'un ou l'autre des logiciels.
+
+## PostGreSQL
+
+PostgreSQL est un serveur de base de données de référence, elle implémente le SQL standard de façon complète. Il s'agit de la base la plus intéressante pour traiter des grands volumes de données en termes de vitesse. Son administration et utilisation peuvent se révéler plus difficile que mariaDB ou MySQL pour les débutants.&#x20;
+
+Il faut la choisir si :
+
+* Votre projet utilise des fonctions avancées SQL
+* Vous cherchez à traiter des grands volumes de données
+* Vous souhaitez effectuer un grand nombre de transactions concurrentes

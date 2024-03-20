@@ -34,9 +34,9 @@ Vous pouvez tester l'installation avec la commande suivante dans un environnemen
 spark-shell
 ```
 
-### Installer le package SparklyR pour travailler avec SparkR dans Rstudio
+### Installer le package SparklyR pour travailler avec Spark dans Rstudio
 
-Si vous souhaitez utiliser SparkR pour soumettre vos instructions au cluster, vous aurez besoin de la librairie SparklyR. Voici la marche à suivre une fois que l'installation de Spark a été effectuée :
+Si vous souhaitez utiliser Spark via une interface R pour soumettre vos instructions au cluster, vous pouvez utiliser la librairie SparklyR. Voici la marche à suivre une fois que l'installation de Spark a été effectuée :
 
 Procédez d'abord à l'installation du package SparklyR à l'aide du dépôt, comme dans les chapitres précédents, puis chargez-le :
 
@@ -59,7 +59,7 @@ PySpark peut être appelé  en choisissant un kernel adapté pour exécuter votr
 
 Ouvrez un miniconda prompt dans la version de votre choix.&#x20;
 
-Attention : il est nécessaire de posséder un environnement anaconda dans une version compatible avec la version de Spark installée. Par exemple, **pour Spark 3.3.2, Python 3.9 est adapté, mais pas 3.11.**&#x20;
+Attention : il est nécessaire de posséder un environnement anaconda dans une version compatible avec la version de Spark installée. Par exemple, **pour Spark 3.3.2, Python 3.9 est adapté, mais pas 3.11.** La matrice contenant les versions supportées de [Python pour Spark est disponible ici.](https://community.cloudera.com/t5/Community-Articles/Spark-Python-Supportability-Matrix/ta-p/379144)&#x20;
 
 ```python
 conda create --name nom_env python --offline

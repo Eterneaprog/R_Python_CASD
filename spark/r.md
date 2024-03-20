@@ -26,7 +26,7 @@ Voyons désormais comment utiliser ces outils pour effectuer des calculs. Il exi
 * Comment exécuter une requête SQL
 * Comment joindre deux tables avec Spark
 
-Ces deux exemples seront traités en SparklyR, car ce package présente la même syntaxe que deeplyr. Cependant, il est important de savoir que ce package est moins performant que d'utiliser SparkR. SparkR est préférable s'il est possible de l'utiliser.
+Ces deux exemples seront traités en SparklyR, car ce package présente la même syntaxe que deeplyr. Les deux librairies SparkR et SparklyR permettent d'interagir avec Spark, avec des fonctionnalités similaires. SparklyR est indépendant tandis que SparkR est une librairie officielle de Spark (comme PySpark).
 
 Je ne présenterai pas dans ce guide les utilisations avancées de Spark (Gestion des graphs avec GraphX, Machine Learning avec MLlib ou encore le mode streaming). Ces utilisations sont très spécifiques, mais font par ailleurs l'objet de documentation en ligne. Je fais mention de leur existence, car ces librairies sont très puissantes. Elles permettent des applications sur des volumes de données qui ne sont pas comparables avec les autres librairies disponibles sur le marché.
 

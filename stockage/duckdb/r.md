@@ -14,7 +14,7 @@ library("duckdb")
 
 con <- dbConnect(duckdb())
 
-con.execute("""SELECT * FROM 'exemple.parquet';""")
+con.execute("SELECT * FROM 'exemple.parquet';")
 
 print(con)
 

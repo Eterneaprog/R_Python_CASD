@@ -22,4 +22,12 @@ Aussi, il est possible de vider l'ensemble des éléments avec la commande :
 rm(list=ls())
 ```
 
-C'est ce qu'il est recommandé de faire lorsque vous souhaitez recommencer l'exécution d'un programme à 0. Dernière précision : R charge parfois la dernière session via le fichier Rdata. Il n'est donc non seulement pas recommandé de sortir un fichier Rdata, mais cela signifie également que la fermeture de R ne vous garantit pas de repartir avec un environnement R vierge.
+C'est ce qu'il est recommandé de faire lorsque vous souhaitez recommencer l'exécution d'un programme à 0.&#x20;
+
+### Chargement de la session précédente au démarrage de Rstudio
+
+RStudio charge la dernière session via le fichier Rdata si une telle instruction est donnée dans les paramètres. Cette instruction se situe dans :
+
+Outils -> Options globales -> Restaurer .Rdata dans l'espace de travail au démarrage
+
+Cela signifie que la fermeture de R avec Rstudio paramétré de façon incorrecte peut amener au chargement de données au démarrage qui ne sont pas prévues. Il n'est donc également pas recommandé de sortir un fichier Rdata puisqu'il peut contenir des données intermédiaires. Il est recommandé de désactiver cette option.

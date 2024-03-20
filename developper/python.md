@@ -1,4 +1,4 @@
-# 👩🏫 Bonnes pratiques de code Python
+# 👩‍🏫 Bonnes pratiques de code Python
 
 Le premier objectif lorsqu'on produit un code informatique est qu'il fonctionne, et réponde à notre besoin. Cependant, on peut atteindre cet objectif avec un code dit de 'bonne qualité' ou non. \
 \
@@ -71,7 +71,7 @@ La façon de faire l'intérieur de la documentation est libre, il existe plusieu
 * Le style Numpy/SciPy
 * Le style Epytext
 
-L'exemple que j'ai fourni ci-dessus est dans le style reStructured, mais j'utilise personnellement le style Google, qui est le plus parlant pour moi. Le plus important est la consistance de la documentation dans le code. Le style est un choix personnel, il importe peu pour les utilisateurs.
+L'exemple fourni ci-dessus est dans le style reStructured, mais le style Google est également très populaire. Le plus important est la consistance de la documentation dans le code. Le style est un choix personnel, il importe peu pour les utilisateurs.
 
 Pour aller plus loin sur ce sujet, [l'article de realPython](https://realpython.com/documenting-python-code/#docstring-formats) sur le sujet est très complet et présente les 4 styles possibles.
 
@@ -88,7 +88,7 @@ Pour commenter en Python, on utilise le symbole #&#x20;
 x + 3
 ```
 
-Lorsqu'il est nécessaire de commenter, je trouve plus clair d'utiliser un commentaire sur toute une ligne au-dessus de la ligne de code que de commenter en bout de ligne. Mais c'est un choix personnel. Pour un court commentaire, cela peut suffire
+Lorsqu'il est nécessaire de commenter, il est souvent plus clair d'utiliser un commentaire sur toute une ligne au-dessus de la ligne de code que de commenter en bout de ligne. Mais c'est un choix personnel. Pour un court commentaire, cela peut suffire
 
 ```python
 x + 3 # On ajoute trois au nombre de bananes
@@ -115,7 +115,7 @@ S'il fallait résumer rapidement la PEP8 :&#x20;
 * Limiter la taille des lignes (79 caractères maximum)
 * Mettre des espaces avant et après les opérateurs : `a == b` et non `a==b`
 
-À mon sens, la PEP8 n'est pas à suivre strictement, mais doit être vue comme un guide de bonnes pratiques. Le plus important est de loin la cohérence du code. Il resterait préférable d'avoir un code consistant qui utilise le mixedCase : `maClasse` pour les classes qu'un code qui utiliserait un mélange de Snakecase et de CamelCase par exemple.
+La PEP8 n'est pas à suivre strictement, mais doit être vue comme un guide de bonnes pratiques. Le plus important est de loin la cohérence du code. Il resterait préférable d'avoir un code consistant qui utilise le mixedCase : `maClasse` pour les classes qu'un code qui utiliserait un mélange de Snakecase et de CamelCase par exemple.
 
 ### Les tests
 
@@ -130,7 +130,7 @@ En Python, il existe globalement deux paradigmes de tests :&#x20;
 
 Unittest est la librairie officielle de test de Python. Cependant, elle est de plus en plus délaissée au profit de Pytest (pour des raisons de simplicité, de fonctionnalité offertes ...). La dynamique historique va vers l'utilisation de Pytest, car la communauté y est plus active et que la syntaxe et la compréhension est plus simple.
 
-C'est personnellement le framework que j'utilise pour développer mes programmes, mais unittest reste fonctionnel. C'est essentiellement un choix qui revient à l'équipe de développement.
+Bien que Pytest soit plus populaire, unittest reste fonctionnel. C'est essentiellement un choix qui revient à l'équipe de développement.
 
 Les tests suivent généralement la conception suivante :&#x20;
 

@@ -1,4 +1,4 @@
-# 👩🏫 Clusters et haute performance
+# 👩‍🏫 Clusters et haute performance
 
 Si vous avez accès à un cluster dans votre projet, vous pouvez quitter le mode local et passer en mode cluster afin de disposer d'une plus grande quantité de ressources.
 
@@ -44,6 +44,6 @@ Un code qui utilise des fonctions qui ne sont pas distribuées (fonctions R stan
 
 * &#x20;Le code est bien optimisé
 
-Cela permet d'assurer que l'utilisation des ressources est optimale. Il est toujours préférable d'optimiser son code pour le faire tourner en local si c'est possible, plutôt que de le faire tourner sur un cluster très puissant. Le cluster ne doit pas être une solution pour faire tourner de façon continue des codes mal optimisés qui prennent trop de temps, car leur conception est défaillante.
+Cela permet d'assurer que l'utilisation des ressources est optimale. Un code bien optimisé et efficace permet d'effectuer des gains de vitesse, y compris en mode cluster. Cela allège également le temps d'utilisation du cluster pour un traitement donné. Cela permet donc de libérer les files de traitement plus rapidement, et ainsi, l'ensemble des utilisateurs en bénéficient !
 
 Les ressources d'un cluster sont partagées entre les membres d'une même bulle et sont couteuses. Il convient d'être raisonnable en communiquant ses traitements aux autres personnes utilisant le cluster, en utilisant le [spark UI](interfaces.md) pour identifier les ressources disponibles et en réservant des ressources adéquates pour son traitement. En général, les clusters font l'objet d'une organisation interne avec des files d'exécution. Il est important de respecter ces files en se renseignant auprès de la personne métier responsable du cluster.
