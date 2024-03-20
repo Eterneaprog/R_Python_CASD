@@ -1,4 +1,4 @@
-# ❤ Git
+# ❤️ Git
 
 ## Gérer ses versions de code avec git
 
@@ -14,7 +14,7 @@ Une fiche récapitulative avec les principales fonctions du logiciel est disponi
 
 ### Mettre en place un bare repository Git
 
-**Attention :** Git ne fait pas partie  de la liste des logiciels présents par défaut au CASD. Si vous ne voyez pas Git Bash Here lorsque vous effectuez un clic droit dans l'explorateur de fichier, vous pouvez demander l'installation de git à service@casd.eu en précisant bien le nom de votre projet.&#x20;
+**Attention :** Git fait partie de la liste des logiciels présents par défaut au CASD mais votre espace projet peut avoir été créé avant. Si vous ne voyez pas Git Bash Here lorsque vous effectuez un clic droit dans l'explorateur de fichier, vous pouvez demander l'installation de git à service@casd.eu en précisant bien le nom de votre projet.&#x20;
 
 D’abord, la personne initiant le dépôt va créer un répertoire bare dans l'espace commun. Pour effectuer cette manœuvre, rendez-vous avec votre explorateur de fichier dans C:\Utilisateurs\Public\Documents. Créez alors un dossier pour le projet. Toujours dans l'explorateur, rentrez dans le dossier et faites : clic droit, Git Bash here. Comme ceci :
 
@@ -42,9 +42,9 @@ git clone C:/Users/Public/Documents/nom_du_dossier_à_cloner/
 
 Vous pouvez à présent éditer votre dépôt, et envoyer vos modifications comme vous le feriez hors de la bulle.
 
-### Ajouter des fichiers au dépot
+### Ajouter des fichiers au dépôt
 
-Créez un fichier supplémentaire dans le dossier contenant votre version du dépot Git.
+Créez un fichier supplémentaire dans le dossier contenant votre version du dépôt Git.
 
 Effectuez de nouveau clic droit, git Bash Here dans ce dossier. Saisissez alors :&#x20;
 

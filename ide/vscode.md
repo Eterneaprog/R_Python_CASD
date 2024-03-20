@@ -30,7 +30,7 @@ Si vous avez installé les deux extensions obligatoires. Vous pouvez ouvrir votr
 
 Grâce au choix du kernel, vous pouvez choisir quel python exécutera votre code (votre environnement conda correspondant). Vous pouvez choisir un kernel en utilisant le bouton situé dans le cadre rouge sur l'image ci-dessus.
 
-Exécuter une cellule de code peut-être effectuer en appuyant sur la flèche située dans le rectangle vert.
+Exécuter une cellule de code peut être effectué en appuyant sur la flèche située dans le rectangle vert.
 
 J'ai également entouré d'un cadre orange deux boutons utiles : la remise à zéro du noyau (Restart). Elle permet de retirer toutes les informations stockées dans Python. Si vous l'utilisez, vous devez ré-executer les cellules les unes après les autres. \
 Afin de ne pas se perdre, il est conseillé de nettoyer le résultat des cellules en même temps que la remise à zéro avec le bouton 'Clear Outputs of all Cells'.  Cela permet essentiellement de repartir à zéro en remettant le notebook à son point de départ.
