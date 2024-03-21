@@ -41,6 +41,3 @@ Il existe une [table des matières générale](bienvenue/table-des-matieres-gene
 ## Besoin d'aide supplémentaire ?
 
 En cas de problèmes, questions sur ce guide, idées pour l’améliorer, n’hésitez pas à nous contacter à [datascience@casd.eu](mailto:datascience@casd.eu). Nous serons ravis d’échanger avec vous des sujets data !
-
-Au nom de l'équipe informatique : \
-Bon code !&#x20;
