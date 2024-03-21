@@ -2,7 +2,7 @@
 
 ## [Organiser et gérer son projet](../organiser/)
 
-Cette section présente[ les environnements anaconda](../organiser/conda-env.md) pour un projet Python, ainsi que comment [organiser un dossier](../organiser/) contenant les fichiers d'une application R ou Python.
+Cette section présente[ les environnements anaconda](../paquets/conda-env.md) pour un projet Python, ainsi que comment [organiser un dossier](../organiser/) contenant les fichiers d'une application R ou Python.
 
 ## [Gérer les paquets associés à votre projet](../paquets/)
 

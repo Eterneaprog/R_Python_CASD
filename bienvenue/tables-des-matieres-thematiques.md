@@ -1,10 +1,10 @@
-# 🛤 Tables des matières thématiques
+# 🛤️ Tables des matières thématiques
 
 ## Python
 
 Les articles fondamentaux pour avoir un environnement de travail Python fonctionnel :
 
-* [Les environnements Anaconda](../organiser/conda-env.md)
+* [Les environnements Anaconda](../paquets/conda-env.md)
 * [Installer un paquet](../paquets/python.md)
 * [VSCode](../ide/vscode.md) / [Jupyter](../ide/jupyterlab.md)
 
