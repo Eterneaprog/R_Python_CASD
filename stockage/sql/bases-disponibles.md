@@ -45,3 +45,22 @@ Il faut la choisir si :
 * Votre projet utilise des fonctions avancées SQL
 * Vous cherchez à traiter des grands volumes de données
 * Vous souhaitez effectuer un grand nombre de transactions concurrentes
+
+
+
+
+
+## Les bases de données dans votre environnement CASD
+
+MySQL, MariaDB et PostGreSQL peuvent être mis à disposition dans votre environnement CASD.&#x20;
+
+Les moteurs SGBD sont en général déposé en version portable dans votre Espace Commun et ne sont pas lancé en tant que service au démarrage du serveur.&#x20;
+
+Il est souvent nécessaire d'initialiser la base de données avec un bat fourni par le CASD.&#x20;
+
+Vous trouverez également des raccourci vous permettant de démarrer / arrêter la base de données.&#x20;
+
+A chaque redémarrage du serveur, il est donc nécessaire qu'un utilisateur du projet relance la base de données.&#x20;
+
+Il est conseillé d'arrêter également la base de données lorsqu'elle n'est pas utilisée pour éviter toute corruption de données.
+

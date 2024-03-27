@@ -4,6 +4,14 @@ Jupyter est une série d'outils qui permet de tester toute sorte de code. Ils so
 
 Il est également possible [d'éditer vos notebooks depuis VSCode](vscode.md#ouvrir-un-notebook-jupyter). Cette solution est actuellement recommandée par rapport à Jupyter pour des raisons de stabilité et de facilité d'utilisation. La procédure d'installation de Jupyter décrite ci-dessous est cependant fonctionnelle et permet d'utiliser Jupyter. Elle doit être suivie de façon précise, sinon, Jupyter peut ne pas fonctionner.
 
+
+
+## Utilisation de Firefox
+
+Les notebook jupyter ne sont compatibles qu'avec Firefox dans les dernières versions.
+
+Pour utiliser Firefox par défaut, exécuter celui-ci depuis le dossier "Raccourcis" situé sur votre bureau puis cliquer sur le lien à l'ouverture pour le définir par défaut.
+
 ## Installation de Jupyter
 
 * Utiliser le raccourci « pip-install-packages » situé dans le dossier Raccourcis situé sur votre bureau et conserver le terminal ouvert pour la durée de l'opération
@@ -18,7 +26,6 @@ Votre installation de Jupyter est effectuée pour votre session. Il n'y a pas be
 
 * Utiliser le raccourci « Miniconda prompt » situé dans le dossier Raccourcis situé sur votre bureau.
 * Saisir `jupyter lab`
-* Lorsque Windows vous demande de choisir un programme pour ouvrir la page web, choisir autre programme puis pointer sur « C:\Program Files\Chrome\chrome.exe »
 
 <figure><img src="../chapters/images/jupyter.png" alt=""><figcaption><p>Un exemple d'utilisation de Jupyter Notebook</p></figcaption></figure>
 
