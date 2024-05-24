@@ -12,9 +12,9 @@ Vous pouvez installer des extensions à l'éditeur VSCode dans la bulle. Pour ce
 * Dans les ... de ce menu, cliquez sur 'installer depuis VSIX'.
 * Choissisez un fichier VSIX correspond à l'extension que vous souhaitez installer dans le dossier S:\VsCode
 
-**Deux extensions sont obligatoires : ms-python.python et ms-tollsai.jupyter.**
-
-Elles permettent de faire fonctionner Python et les notebook Jupyter avec Visual Studio Code.&#x20;
+{% hint style="info" %}
+Deux extensions sont très importante pour Python : ms-python.python et ms-tollsai.jupyter. Elles permettent de faire fonctionner Python et les notebook Jupyter avec Visual Studio Code.&#x20;
+{% endhint %}
 
 ### Interpréteur pour Python
 

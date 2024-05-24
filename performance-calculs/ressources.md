@@ -1,8 +1,8 @@
-# 👩🏫 Notions autour des ressources
+# 👩‍🏫 Notions autour des ressources
 
 ## Comprendre la gestion des ressources
 
-On appelle ressource la configuration matérielle associée à votre projet. C'est-à-dire, le niveau de puissance du matériel fourni. Il doit être adapté aux traitements que vous allez effectuer. Par exemple, une régression linéaire sur 30 000 individus peut tout à fait être réalisé avec une configuration minimale. Mais ce n'est pas le cas de l'entrainement d'un modèle d'intelligence artificielle sur des centaines de milliers de lignes. Par ressources, au CASD, on entend le processeur et ses cœurs, la mémoire vive (RAM) ainsi que la mémoire sur disque (HDD/SSD). Dans l'acception générale, les ressources informatiques englobent bien sûr d'autres éléments. Cependant, la prédominance des ressources mémoires et processeur est très importante dans le niveau de performance obtenu. C'est pour cela que nous allons nous concentrer sur ces deux éléments.
+On appelle ressources la configuration matérielle associée à votre projet. C'est-à-dire, le niveau de puissance du matériel fourni. Il doit être adapté aux traitements que vous allez effectuer. Par exemple, une régression linéaire sur 30 000 individus peut tout à fait être réalisé avec une configuration minimale. Mais ce n'est pas le cas de l'entrainement d'un modèle d'intelligence artificielle sur des centaines de milliers de lignes. Par ressources, au CASD, on entend le processeur et ses cœurs, la mémoire vive (RAM) ainsi que le stockage sur disque (HDD/SSD). Dans l'acception générale, les ressources informatiques englobent bien sûr d'autres éléments. Cependant, la prédominance des ressources mémoires et processeur est très importante dans le niveau de performance obtenu. C'est pour cela que nous allons nous concentrer sur ces deux éléments.
 
 ### Le processeur
 
@@ -19,4 +19,6 @@ Le deuxième élément clé qui détermine la performance d'un calcul (hormis le
 
 En effet, en chargeant des données lues à de multiples reprises dans la mémoire RAM, on économise ainsi le temps de lecture sur disque. Cela peut représenter un gain de temps très important selon les applications. Cette utilisation n'est pas la même selon les logiciels. Par exemple, R utilise massivement la mémoire, ce qui peut causer des erreurs puisque celui-ci n'inclue pas de mécanisme de nettoyage nativement. À la différence de Python, qui vide automatiquement la mémoire, R impose de faire attention aux chargements que l'on effectue et de vider manuellement la mémoire. Nous verrons également ceci dans [la gestion des ressources avec R](r.md)
 
-**Attention :** Les ressources sur lesquelles travaillent les différents membres de votre projet sont communes ! Cela signifie que la mémoire est partagée, ainsi que le processeur. À l'aide du [gestionnaire des tâches de Windows](gestionnaire-taches.md), il est possible d'évaluer les ressources consommées par chaque utilisateur en temps réel dans l'onglet 'utilisateurs'. Il permet aussi de savoir quels utilisateurs sont connectés. Vous pouvez apprendre à vous en servir grâce à la fiche qui lui est dédiée.
+{% hint style="warning" %}
+Les ressources sur lesquelles travaillent les différents membres de votre projet sont communes ! Cela signifie que la mémoire est partagée, ainsi que le processeur. À l'aide du [gestionnaire des tâches de Windows](gestionnaire-taches.md), il est possible d'évaluer les ressources consommées par chaque utilisateur en temps réel dans l'onglet 'utilisateurs'. Il permet aussi de savoir quels utilisateurs sont connectés. Vous pouvez apprendre à vous en servir grâce à la fiche qui lui est dédiée.
+{% endhint %}

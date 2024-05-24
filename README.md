@@ -32,6 +32,20 @@ Pour simplifier la recherche des articles, des pictogrammes permettent de repér
 
 D'autres articles non spécifiques à ces langages sont présents, leur contenu est applicable quel que soit votre choix de langage !
 
+Dans les articles, ces blocs peuvent vous aider :
+
+{% hint style="info" %}
+Les aides / informations et éléments facultatifs sont repérables par ces blocs bleus
+{% endhint %}
+
+{% hint style="warning" %}
+Ce bloc vous prévient d'un piège ou d'une idée contr-intuitive
+{% endhint %}
+
+{% hint style="danger" %}
+Ce bloc donne de l'aide pour résoudre ou éviter une erreur classique
+{% endhint %}
+
 ## Où est la table des matières ?
 
 Il existe des [parcours thématiques](bienvenue/tables-des-matieres-thematiques.md) selon votre pratique : Python, R ou Spark, qui listent les articles les plus pertinents. Ce chemin est recommandé pour les personnes débutantes.

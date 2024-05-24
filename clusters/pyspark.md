@@ -19,4 +19,6 @@ spark = SparkSession.builder \
     .getOrCreate()
 ```
 
+{% hint style="warning" %}
 Notez l'utilisation de l'instruction spark.yarn.queue qui permet de choisir sur quelle file il faut effectuer le traitement. Il peut ne pas exister de file par défaut. Par conséquent, ne pas préciser la file peut amener l'instruction SparkSession.builder() à échouer.
+{% endhint %}

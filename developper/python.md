@@ -1,7 +1,7 @@
 # 👩‍🏫 Bonnes pratiques de code Python
 
-Le premier objectif lorsqu'on produit un code informatique est qu'il fonctionne, et réponde à notre besoin. Cependant, on peut atteindre cet objectif avec un code dit de 'bonne qualité' ou non. \
-\
+Le premier objectif lorsqu'on produit un code informatique est qu'il fonctionne, et réponde à notre besoin. Cependant, on peut atteindre cet objectif avec un code dit de 'bonne qualité' ou non.&#x20;
+
 Nous allons apprendre dans cette section des premières notions sur la qualité du code, et quels sont les avantages très concrets d'appliquer ces principes. Ensuite, nous verrons comment appliquer ces principes à notre code Python.
 
 ## Une notion de qualité du code
@@ -85,20 +85,18 @@ Pour commenter en Python, on utilise le symbole #&#x20;
 
 ```python
 # On ajoute trois au nombre de bananes
-x + 3
+x = x + 3
 ```
 
 Lorsqu'il est nécessaire de commenter, il est souvent plus clair d'utiliser un commentaire sur toute une ligne au-dessus de la ligne de code que de commenter en bout de ligne. Mais c'est un choix personnel. Pour un court commentaire, cela peut suffire
 
-```python
-x + 3 # On ajoute trois au nombre de bananes
-```
+<pre class="language-python"><code class="lang-python"><strong>x = x + 3 # On ajoute trois au nombre de bananes
+</strong></code></pre>
 
 Cependant, la meilleure solution serait bien sûr :&#x20;
 
-```
-nb_bananes + 3
-```
+<pre><code><strong>nb_bananes = nb_bananes + 3
+</strong></code></pre>
 
 ### Le style
 

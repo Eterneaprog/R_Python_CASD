@@ -20,7 +20,9 @@ conf["spark.yarn.queue"] <- "prod"
 sc <- spark_connect(master = "yarn", config = conf)
 ```
 
+{% hint style="warning" %}
 Notez la présence du paramètre spark.yarn.queue. Il n'existe pas de file par défaut pour forcer le choix vers une des files adaptées. Ne pas préciser ce paramètre amènera le traitement à échouer !
+{% endhint %}
 
 Une fois cette configuration effectuée, il faut effectuer vos traitements comme vous le feriez en mode local.
 

@@ -1,6 +1,6 @@
-# 👩🏫 Bonnes pratiques de code R
+# 👩‍🏫 Bonnes pratiques de code R
 
-Je ne vais pas plagier l'excellent travail de Sophie Baillargeon, de l'université de Laval. Son article est disponible ici, en français s'il vous plait :&#x20;
+Je ne vais pas plagier l'excellent travail de Sophie Baillargeon, de l'université de Laval. Son article est disponible ici, en français :&#x20;
 
 {% embed url="https://stt4230.rbind.io/amelioration_code/bonnes_pratiques_r/" %}
 

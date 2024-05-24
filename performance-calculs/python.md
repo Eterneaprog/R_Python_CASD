@@ -65,4 +65,6 @@ if __name__ == "__main__":
 
 Dans ce code, on exécute un traitement sur les données de façon parallèle avec 4 processus. On commence par définir le traitement que chaque processus va effectuer. Puis, la partie du code qui suite l'instruction `if __name__ == "__main__"` correspond au processus central sur le schéma précédent. Il commence par invoquer les autres processus. Puis, il leur assigne une tâche à effectuer et enregistre les résultats. Une fois ces traitements effectués, les processus sont terminés et on obtient le résultat final que l'on peut retraiter dans le processus central (ou non si ce n'est pas nécessaire).
 
-**Attention :** Les ressources mémoires associées à chaque processus sont partagées dans cet exemple ! Cela veut dire que l'utilisation massive de processus peut provoquer une saturation de la mémoire RAM. Chaque processus peut être amené à utiliser des ressources mémoires dans son traitement, et donc augmenter fortement la consommation par rapport à un traitement monoprocesseur.
+{% hint style="warning" %}
+Les ressources mémoires associées à chaque processus sont partagées dans cet exemple ! Cela veut dire que l'utilisation massive de processus peut provoquer une saturation de la mémoire RAM. Chaque processus peut être amené à utiliser des ressources mémoires dans son traitement, et donc augmenter fortement la consommation par rapport à un traitement monoprocesseur.
+{% endhint %}

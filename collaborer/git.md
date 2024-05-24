@@ -14,7 +14,9 @@ Une fiche récapitulative avec les principales fonctions du logiciel est disponi
 
 ### Mettre en place un bare repository Git
 
-**Attention :** Git fait partie de la liste des logiciels présents par défaut au CASD mais votre espace projet peut avoir été créé avant. Si vous ne voyez pas Git Bash Here lorsque vous effectuez un clic droit dans l'explorateur de fichier, vous pouvez demander l'installation de git à service@casd.eu en précisant bien le nom de votre projet.&#x20;
+{% hint style="warning" %}
+Git fait partie de la liste des logiciels présents par défaut au CASD mais votre espace projet peut avoir été créé avant. Si vous ne voyez pas Git Bash Here lorsque vous effectuez un clic droit dans l'explorateur de fichier, vous pouvez demander l'installation de git à service@casd.eu en précisant bien le nom de votre projet.&#x20;
+{% endhint %}
 
 D’abord, la personne initiant le dépôt va créer un répertoire bare dans l'espace commun. Pour effectuer cette manœuvre, rendez-vous avec votre explorateur de fichier dans C:\Utilisateurs\Public\Documents. Créez alors un dossier pour le projet. Toujours dans l'explorateur, rentrez dans le dossier et faites : clic droit, Git Bash here. Comme ceci :
 
