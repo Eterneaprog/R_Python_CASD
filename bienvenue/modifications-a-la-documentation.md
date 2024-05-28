@@ -22,7 +22,7 @@
 * **Améliorations générales**
   * Ajout de boites d'informations / alertes / erreurs dans la documentation
   * Corrections orthographiques
-  * Ajoute de cette page de logs
+  * Ajout de cette page de logs
 
 </details>
 
