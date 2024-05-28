@@ -33,6 +33,7 @@
   * [📊 Gérer les ressources avec R](performance-calculs/r.md)
   * [🐍 Paralléliser son code Python](performance-calculs/python.md)
 * [💾 Optimiser les performances de stockage](stockage/README.md)
+  * [👩‍🏫 Choisir son format de fichier](stockage/choisir-son-format-de-fichier.md)
   * [🗄️ Utiliser Parquet](stockage/parquet.md)
   * [💽 Utiliser une base SQL](stockage/sql/README.md)
     * [👩‍🏫 Les bases SQL](stockage/sql/bases.md)
