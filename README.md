@@ -35,11 +35,11 @@ D'autres articles non spécifiques à ces langages sont présents, leur contenu 
 Dans les articles, ces blocs peuvent vous aider :
 
 {% hint style="info" %}
-Les aides / informations et éléments facultatifs sont repérables par ces blocs bleus
+Les aides / informations et éléments facultatifs sont repérables par ces blocs
 {% endhint %}
 
 {% hint style="warning" %}
-Ce bloc vous prévient d'un piège ou d'une idée contr-intuitive
+Ce bloc vous prévient d'un piège ou d'une idée contre-intuitive
 {% endhint %}
 
 {% hint style="danger" %}
