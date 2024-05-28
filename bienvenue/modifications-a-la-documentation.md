@@ -2,7 +2,7 @@
 
 <details>
 
-<summary>Mise à jour de mai 2024</summary>
+<summary>🌻 Mise à jour de mai 2024</summary>
 
 * **Nouveaux articles**
   * Spark
