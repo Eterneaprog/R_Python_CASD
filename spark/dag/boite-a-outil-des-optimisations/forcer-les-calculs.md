@@ -14,11 +14,11 @@ Par conséquent, la question de l'exécution du code forcée, en ajoutant une in
 
 En mode interactif, il peut être intéressant de forcer les calculs de temps en temps, afin de voir les résultats apparaitre au fur et à mesure. Dans un notebook Jupyter, on peut utiliser `.show()` afin de vérifier que les tables ont la forme attendue. De plus, en mode interactif, la performance n'est pas l'objectif recherché. Ce mode est plutôt réservé au développement de nouveaux codes et à l'exploration de données.&#x20;
 
-En mode production, lorsque l'on met en route un script qui a pour but de produire un résultat numérique ou une table, il est préférable de retirer les actions intermédiaires qui provoquent un déclenchement de calcul inutile. Cela permettra à Catalyst d'effectuer de fortes optimisations avant l'exécution des calculs, en trouvant un plan logique et phyisique optimal.
+En mode production, lorsque l'on met en route un script qui a pour but de produire un résultat numérique ou une table, il est préférable de retirer les actions intermédiaires qui provoquent un déclenchement de calcul inutile. Cela permettra à Catalyst d'effectuer de fortes optimisations avant l'exécution des calculs, en trouvant un plan logique et physique optimal.
 
 ### Utilisation de `collect`&#x20;
 
-`Collect` est une instruction présente en PySpark comme en Sparklyr. Bien qu'elle n'est pas exactement le même résultat dans les deux langages, le comportement de la commande est le même. Elle retourne l'ensemble des lignes du tableau Spark en un tableau R ou une liste de lignes dans le cas de PySpark. Par conséquent, il s'agit d'une action puisque l'on part d'un tableau Spark vers un autre format.
+`Collect` est une instruction présente en PySpark comme en SparkR/Sparklyr. Bien qu'elle ne soit pas exactement le même résultat dans les deux langages, le comportement de la commande est le même. Elle retourne l'ensemble des lignes du tableau Spark en un tableau R ou une liste de lignes dans le cas de PySpark. Par conséquent, il s'agit d'une action puisque l'on part d'un tableau Spark vers un autre format.
 
 L'instruction collect sur une trop grande quantité de données provoque de grands déplacements de données. Ce n'est pas souvent efficace. Par conséquent, si on souhaite vraiment visualiser le résultat, il est préférable d'afficher les 5 premières lignes de la table, ce qui est nettement moins consommateur de ressources et de temps.
 

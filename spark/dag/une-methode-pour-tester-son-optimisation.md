@@ -37,8 +37,8 @@ Il existe différentes techniques afin d'optimiser son code, à adapter selon la
 
 Une fois votre stratégie d'optimisation définie, vous pouvez effectuer un benchmark pour comparer si la stratégie d'optimisation a permis de réduire le temps de calcul. En utilisant le Spark UI, vous pouvez obtenir la durée de traitement ou alors définir dans votre code des balises de temps pour mesurer la durée d'une fonction :&#x20;
 
-En pyspark :
-
+{% tabs %}
+{% tab title="PySpark" %}
 ```python
 from pyspark.sql import SparkSession
 import time
@@ -58,17 +58,47 @@ my_spark_function()
 end_time = time.time()
 duration = end_time - start_time
 
-# Affichez la durée
+# Afficher la durée
 print(f"La fonction Spark a mis {duration} secondes pour s'exécuter.")
 ```
+{% endtab %}
 
-En SparklyR :&#x20;
+{% tab title="SparkR" %}
+```r
+# Chargement de la bibliothèque SparkR
+library(SparkR)
 
+# Définition de la fonction Spark
+my_spark_function <- function() {
+  sparkR.session(master = "local[*]", appName = "mon_application")
+  
+  # Transformations
+  df <- read.df("chemin/vers/votre/fichier.csv", source = "csv", header = "true", inferSchema = "true")
+  result_df <- summarize(groupBy(df, df$colonne), count = n(df$colonne))
+  
+  # Action
+  showDF(result_df)
+  
+  # Arrêter la session Spark
+  sparkR.session.stop()
+}
+
+# Calcul de la durée d'exécution
+start_time <- Sys.time()
+my_spark_function()
+end_time <- Sys.time()
+duration <- as.numeric(difftime(end_time, start_time, units = "secs"))
+
+# Afficher la durée
+cat(sprintf("La fonction Spark a mis %f secondes pour s'exécuter.\n", duration))
+```
+{% endtab %}
+
+{% tab title="SparklyR" %}
+{% code overflow="wrap" fullWidth="false" %}
 ```r
 library(sparklyr)
 library(dplyr)
-library(SparkR)
-library(SparkR::sparklyr)
 
 my_spark_function <- function() {
   spark <- spark_connect(master = "local", version = "3.0.2")
@@ -81,11 +111,15 @@ my_spark_function <- function() {
   spark_print(result_df)
 }
 
+# Calcul de la durée d'exécution
 start_time <- Sys.time()
 my_spark_function()
 end_time <- Sys.time()
+duration <- as.numeric(difftime(end_time, start_time, units = "secs"))
 
-duration <- end_time - start_time
-
-cat(paste("La fonction Spark a mis", as.numeric(duration), "secondes pour s'exécuter.\n"))
+# Afficher la durée
+cat(sprintf("La fonction Spark a mis %f secondes pour s'exécuter.\n", duration))
 ```
+{% endcode %}
+{% endtab %}
+{% endtabs %}

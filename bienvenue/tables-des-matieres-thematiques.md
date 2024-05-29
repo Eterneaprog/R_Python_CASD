@@ -25,5 +25,5 @@ Les articles fondamentaux pour avoir un environnement de travail R fonctionnel :
 Comment installer Spark et le faire fonctionner avec une syntaxe proche de votre langage favori :
 
 * [Installer Spark](../spark/installer.md)
-* [Avec R](../spark/r.md) / [Avec Python](../spark/python.md)
+* [Utiliser Spark](../spark/r.md)
 

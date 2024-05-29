@@ -30,7 +30,7 @@ Les données sont volumineuses ? Vous avez besoin d'une solution de stockage eff
 
 ## [Spark](../spark/)
 
-Vous voulez traiter des grands volumes à vitesse grand V, [Spark ](../spark/comprendre.md)est fait pour vous. Voici comment [l'installer](../spark/installer.md), le manipuler [avec R](../spark/r.md) et [Python](../spark/python.md) et même [apprendre à lire comment Spark exécute concrètement votre code.](../spark/dag/)
+Vous voulez traiter des grands volumes à vitesse grand V, [Spark ](../spark/comprendre.md)est fait pour vous. Voici comment [l'installer](../spark/installer.md), [le manipuler](../spark/r.md) et même [apprendre à lire comment Spark exécute concrètement votre code.](../spark/dag/)
 
 ## [Gestion des clusters](../clusters/)
 

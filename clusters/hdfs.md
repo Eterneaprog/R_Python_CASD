@@ -28,7 +28,7 @@ hdfs dfs -get /chemin-sur-hdfs/fichier.csv /chemin-systeme-local.csv
 
 ## Ajouter un fichier à la RAM du cluster depuis HDFS&#x20;
 
-Lire un CSV ou un fichier parquet peut être fait avec les commandes suivantes (il faut avoir défini un [spark\_connect](sparklyr.md#adapter-la-configuration) au préalable) :&#x20;
+Lire un CSV ou un fichier parquet peut être fait avec les commandes suivantes (il faut avoir défini un [spark\_connect](pyspark.md) au préalable) :&#x20;
 
 ```r
 spark_read_csv(sc, name = "nom_table", path = "hdfs://chemin/fichier.csv")
@@ -40,7 +40,7 @@ spark_read_parquet(sc, name = "nom_table", path = "hdfs://chemin/fichier.parquet
 
 ## Ajouter des données dans HDFS depuis la RAM du cluster
 
-Écrire un CSV ou un fichier parquet peut être fait avec les commandes suivantes (il faut avoir défini un [spark\_connect](sparklyr.md#adapter-la-configuration) au préalable) :&#x20;
+Écrire un CSV ou un fichier parquet peut être fait avec les commandes suivantes (il faut avoir défini un [spark\_connect](pyspark.md) au préalable) :&#x20;
 
 ```r
 spark_write_csv(sc, spark_dataframe, path = "hdfs://chemin/fichier.csv")

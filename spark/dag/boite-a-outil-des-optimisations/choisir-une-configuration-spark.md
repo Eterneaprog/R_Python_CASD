@@ -4,8 +4,7 @@ Dans certains cas, les données dépassent la taille de la mémoire allouée au 
 
 Si vous avez détecté une configuration insuffisante, vous pouvez apporter des modifications à la configuration de Spark pour votre programme :
 
-* [En R](../../r.md#configurer-spark-en-mode-local)&#x20;
-* [En Python](../../python.md#configurer-spark-en-mode-local)
+* [Modifier sa configuration Spark](../../r.md#configurer-spark-en-mode-local)
 
 Voici les paramètres qui vont particulièrement nous intéresser dans le cas d'une telle optimisation en cluster :
 

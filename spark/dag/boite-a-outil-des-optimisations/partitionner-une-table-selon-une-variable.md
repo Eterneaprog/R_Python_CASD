@@ -38,25 +38,9 @@ Il n'existe pas de partitionnement idéal ou par défaut, il faut toujours réfl
 
 ## Comment partitionner ?
 
-### Avec Sparklyr
-
-Partitionner un dataframe spark avec Sparklyr est très simple, d'abord par nombre de partitions :
-
-```r
-sdf_repartition(my_dataframe, partitions = 10, partition_by = NULL) 
-```
-
-ou par variable(s) :&#x20;
-
-```r
-sdf_repartition(my_dataframe, partitions = NULL, partition_by = "my_variable") 
-```
-
-On peut aussi partitionner avec plusieurs variables, en remplaçant la chaine de caractère par un vecteur.
-
-### Avec PySpark
-
-Partitionner un dataframe spark avec PySpark peut se faire de la façon suivante, d'abord par nombre de partitions :
+{% tabs %}
+{% tab title="PySpark" %}
+Par nombre de partitions :
 
 ```python
 my_dataframe.repartition(10)
@@ -69,6 +53,40 @@ my_dataframe.repartition("my_variable")
 ```
 
 On peut aussi partitionner avec plusieurs variables, en remplaçant la chaine de caractère par un vecteur.
+{% endtab %}
+
+{% tab title="SparkR" %}
+Par nombre de partitions :
+
+```r
+repartitioned_df <- repartition(my_dataframe, 10)
+```
+
+ou par variable(s) :&#x20;
+
+```r
+repartitioned_df <- repartition(my_dataframe, my_dataframe$my_variable)
+```
+
+On peut aussi partitionner avec plusieurs variables, en remplaçant la variable par un vecteur.
+{% endtab %}
+
+{% tab title="SparklyR" %}
+Par nombre de partitions :
+
+```r
+sdf_repartition(my_dataframe, partitions = 10, partition_by = NULL) 
+```
+
+ou par variable(s) :&#x20;
+
+```r
+sdf_repartition(my_dataframe, partitions = NULL, partition_by = "my_variable") 
+```
+
+On peut aussi partitionner avec plusieurs variables, en remplaçant la chaine de caractère par un vecteur.
+{% endtab %}
+{% endtabs %}
 
 ## Exemples de partitionnements par variables pertinents :
 
