@@ -16,11 +16,9 @@ layout:
 
 ## Installer Spark
 
-Pour simplifier l'installation de Spark, nous avons conçu un script qui effectue cette installation de façon automatisée. Il est situé dans le dossier Python du dossier Raccourcis de votre bureau. Que vous souhaitiez adresser le logiciel Spark avec une syntaxe proche de R ou de Python, cette étape est nécessaire.
+Pour simplifier l'installation de Spark, nous avons conçu un script qui effectue cette installation de façon automatisée. Il est situé dans le dossier Spark du dossier Raccourcis de votre bureau. Que vous souhaitiez adresser le logiciel Spark avec une syntaxe proche de R ou de Python, cette étape est nécessaire.
 
 Cliquez sur AutoInstallSpark.bat afin d'effectuer l'installation.
-
-Vous devrez d'abord choisir une version de Spark parmi la liste de celle disponible en saisissant son numéro. Je vous conseille la plus récente.&#x20;
 
 {% hint style="warning" %}
 Vous devez attendre la fin du script et qu'il demande d'appuyer sur entrée pour terminer. Il ne faut pas fermer la fenêtre du terminal ouvert pendant le script, cette opération n'est pas très longue. Il suffit d'attendre la copie de l'ensemble des fichiers.
@@ -77,7 +75,7 @@ Vous possédez un serveur Spark adressable avec R pour votre application !
 ### Installer PySpark et les Notebook Jupyter
 
 {% hint style="info" %}
-Il est nécessaire de posséder un environnement anaconda dans une version compatible avec la version de Spark installée. Par exemple, **pour Spark 3.3.2, Python 3.9 est adapté, mais pas 3.11.** La matrice contenant les versions supportées de [Python pour Spark est disponible ici.](https://community.cloudera.com/t5/Community-Articles/Spark-Python-Supportability-Matrix/ta-p/379144) L'extrait qui nous intéresse est celui-ci :&#x20;
+Il est nécessaire de posséder un environnement anaconda dans une version compatible avec la version de Spark installée. Par exemple, **pour Spark 3.3.6, Python 3.9 est adapté, mais pas 3.11.** La matrice contenant les versions supportées de [Python pour Spark est disponible ici.](https://community.cloudera.com/t5/Community-Articles/Spark-Python-Supportability-Matrix/ta-p/379144) L'extrait qui nous intéresse est celui-ci :&#x20;
 {% endhint %}
 
 | Spark | Python minimum | Python maximum |
@@ -97,7 +95,7 @@ PySpark peut être appelé en choisissant un kernel adapté pour exécuter votre
 Lancez et gardez ouvert le script pip-install-package et saissisez, dans votre miniconda prompt :
 
 ```python
-pip install pyspark==3.3.2
+pip install pyspark==3.3.6
 pip install ipykernel --user
 ```
 
