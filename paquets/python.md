@@ -2,17 +2,13 @@
 
 ## Installer un paquet python
 
-En python, le gestionnaire de paquets à utiliser au CASD est pip car c’est un serveur PYPI qui est synchronisé. Le CASD vous met à disposition un script qui permet d'assurer le lancement du serveur contenant les paquets.
+En python, le gestionnaire de paquets à utiliser au CASD est pip, car c’est un [serveur PYPI ](comprendre.md#comment-cet-ecosysteme-peut-fonctionner-sans-internet)qui est synchronisé.
 
-Lancez le script pip-install-package depuis  le dossier "Python" situé dans le dossier "Raccourcis" situé sur votre bureau.
-
-{% hint style="danger" %}
-Ne fermez pas la fenêtre obtenue tant que vos packages ne sont pas installés !
+{% hint style="warning" %}
+Le serveur de paquets CASD ne contient pas l'ensemble des paquets disponibles sur PYPI pour des raisons de sécurité, si l'installation échoue, vous pouvez nous contacter par mail en précisant le paquet souhaité. Nous évaluerons alors s'il est élligible à entrer au dépot de paquets.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/Install-package.PNG" alt=""><figcaption><p>Le script d'installation de paquets disponible dans le dossier Python devrait ressembler à ceci. Il faut le laisser ouvert pendant la manipulation !</p></figcaption></figure>
-
-L’environnement conda de votre choix doit être créé et activé (voir chapitre 1). Il vous faudra ouvrir un Miniconda prompt depuis l'espace raccourci :&#x20;
+L’environnement conda de votre choix doit être créé et activé ([voir article dédié](conda-env.md)). Il vous faudra ouvrir un Miniconda prompt depuis l'espace raccourci :&#x20;
 
 * Dans l'anaconda prompt ouvert, saisissez :
 
